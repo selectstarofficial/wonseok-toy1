@@ -1,0 +1,8 @@
+.screen {
+  width: 100px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  overflow-y: scroll;
+  background-image: url("/Users/nws/selectstar/wonseok-toy1/public/screenback.jpeg");
+}

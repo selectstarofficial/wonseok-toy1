@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from './clients';
+import Clients from './clients';
 import Screen from './screen';
 import Products from './our_products';
 import Solutions from './solutions';
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App"> 
     <Screen/>
-    <Header/>
+    <Clients/>
     <Products/>
     <Solutions/>
     <Process/>

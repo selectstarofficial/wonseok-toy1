@@ -1,13 +1,29 @@
-import React , { Component } from 'react';
+import React, { Component } from "react";
+import "./screen.css";
+import styled from "styled-components";
 
 class Screen extends Component {
-    render(){
-        return <div>
-            <p>THE FINEST <br/> AI DaTa Platfrom</p>
-            <img 
-            src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/space_16x9_0.jpg?itok=WYDOreyt" 
-            alt = "test"></img></div>
-    }
+  render() {
+    return (
+      <div className="screen">
+        <div className="title">
+          <div className="product">PRODUCT</div>
+          <div className="solutions">SOLUTIONS </div>
+          <div className="company">COMPANY</div>
+          <div className="contact">CONTACT</div>
+        </div>
+        <div className="maintext">
+          THE FINEST
+          <br /> AI Data Platform
+        </div>
+        <div className="subtext">
+          Diverse and High Quality Data fitted just for your project
+        </div>
+        <button className="startbutton">GET STARTED</button>
+        <button className="logobutton">asd</button>
+      </div>
+    );
+  }
 }
 
 export default Screen;
