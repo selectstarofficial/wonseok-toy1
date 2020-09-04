@@ -1,12 +1,19 @@
 import React, { Component } from "react";
-import "./clients.js";
+import "./clients.css";
 import styled from "styled-components";
 
 class Clients extends Component {
   render() {
     return (
-      <div className="clients">
-        <p>LG CNS NAVER LOTTE SK</p>
+      <div className="cover">
+        <div className="clients">
+          <div className="LG"></div>
+          <div className="NAVER"></div>
+          <div className="LOTTE"></div>
+          <div className="SK"></div>
+          <div className="KAIST"></div>
+          <div className="NIA"></div>
+        </div>
       </div>
     );
   }

@@ -1,6 +1,63 @@
-.clients{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    margin: auto;
+.cover {
+  width: 100%;
+  height: 106px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.clients {
+  display: flex;
+  align-items: center;
+  left: 10%;
+  margin: auto;
+  top: 0%;
+}
+.LG {
+  background-image: url("lg.png");
+  height: 34px;
+  width: 173px;
+  background-repeat: no-repeat;
+  order: 0;
+  align-self: center;
+}
+.NAVER {
+  background-image: url("naver.png");
+  height: 34px;
+  width: 173px;
+  background-repeat: no-repeat;
+  order: 1;
+  align-self: center;
+}
+.LOTTE {
+  background-image: url("lotte.png");
+  height: 34px;
+  width: 173px;
+  background-repeat: no-repeat;
+  order: 2;
+  align-self: center;
+}
+.SK {
+  background-image: url("sk.png");
+  height: 34px;
+  width: 173px;
+  background-repeat: no-repeat;
+  order: 3;
+  align-self: center;
+}
+.KAIST {
+  background-image: url("kaist.png");
+  height: 34px;
+  width: 173px;
+  background-repeat: no-repeat;
+  order: 4;
+  align-self: center;
+}
+.NIA {
+  background-image: url("nia.png");
+  height: 34px;
+  width: 173px;
+  background-repeat: no-repeat;
+  order: 5;
+  align-self: center;
 }

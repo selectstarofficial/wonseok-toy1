@@ -7,20 +7,27 @@ class Screen extends Component {
     return (
       <div className="screen">
         <div className="title">
-          <div className="product">PRODUCT</div>
-          <div className="solutions">SOLUTIONS </div>
-          <div className="company">COMPANY</div>
-          <div className="contact">CONTACT</div>
+          <div className="logoimg"></div>
+          <div className="titletext">
+            <div className="product">PRODUCT</div>
+            <div className="solutions">SOLUTIONS </div>
+            <div className="company">COMPANY</div>
+            <div className="contact">CONTACT</div>
+          </div>
         </div>
         <div className="maintext">
           THE FINEST
-          <br /> AI Data Platform
+          <br /> AI Data PLATFORM
         </div>
         <div className="subtext">
           Diverse and High Quality Data fitted just for your project
         </div>
-        <button className="startbutton">GET STARTED</button>
-        <button className="logobutton">asd</button>
+        <button className="startbutton">
+          <div className="startbuttontext">GET STARTED</div>
+        </button>
+        <button className="logobutton">
+          <div className="logobuttonimg"></div>
+        </button>
       </div>
     );
   }
