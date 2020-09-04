@@ -5,13 +5,15 @@
   display: flex;
   flex-direction: row;
   align-self: center;
+  top: 0;
 }
 .clients {
+  width: 100%;
+  height: 106px;
   display: flex;
+  margin-left: 15%;
+  margin-top: 20px;
   align-items: center;
-  margin: auto;
-  top: 0%;
-  padding: 0;
 }
 .LG {
   background-image: url("lg.png");

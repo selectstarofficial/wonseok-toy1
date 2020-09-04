@@ -4,9 +4,11 @@ import "./our_projects.css";
 class Products extends Component {
   render() {
     return (
-      <div className="cover">
-        <div className="product"></div>
-        <div className="maintext"></div>
+      <div className="coverpage">
+        <div className="product">PRODUCTS</div>
+        <div className="maintext">
+          QUICK&ACCURATE <br /> DATA COLLECTION / ANNOTATION
+        </div>
         <div className="data">
           <div className="image"></div>
           <div className="video"></div>
