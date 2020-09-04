@@ -9,9 +9,9 @@
 .clients {
   display: flex;
   align-items: center;
-  left: 10%;
   margin: auto;
   top: 0%;
+  padding: 0;
 }
 .LG {
   background-image: url("lg.png");
