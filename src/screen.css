@@ -25,6 +25,26 @@
   z-index: 9999;
   top: 0;
 }
+.screen:not([data-scroll="0"]) .title {
+  padding-top: 2em;
+}
+.screen:not([data-scroll="0"]) .title {
+  position: fixed;
+  top: 0;
+  background-color: blue;
+  color: black;
+}
+.screen:not([data-scroll="0"]) .titletext {
+  position: fixed;
+  color: black;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 1em;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
 .titletext {
   display: flex;
   flex-direction: row;
@@ -114,7 +134,7 @@
   width: 180px;
   height: 25px;
   left: 15%;
-  top: 20px;
+  top: 13.5px;
 }
 .maintext {
   position: absolute;

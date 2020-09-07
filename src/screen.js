@@ -2,6 +2,26 @@ import React, { Component } from "react";
 import "./screen.css";
 import styled from "styled-components";
 
+const debounce = (fn) => {
+  let frame;
+  return (...params) => {
+    if (frame) {
+      cancelAnimationFrame(frame);
+    }
+
+    frame = requestAnimationFrame(() => {
+      fn(...params);
+    });
+  };
+};
+const storeScroll = () => {
+  document.documentElement.dataset.scroll = window.scrollY;
+};
+document.addEventListener("scroll", debounce(storeScroll), {
+  passive: true,
+});
+
+storeScroll();
 class Screen extends Component {
   render() {
     return (
