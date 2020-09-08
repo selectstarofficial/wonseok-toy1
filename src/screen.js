@@ -2,26 +2,6 @@ import React, { Component } from "react";
 import "./screen.css";
 import styled from "styled-components";
 
-const debounce = (fn) => {
-  let frame;
-  return (...params) => {
-    if (frame) {
-      cancelAnimationFrame(frame);
-    }
-
-    frame = requestAnimationFrame(() => {
-      fn(...params);
-    });
-  };
-};
-const storeScroll = () => {
-  document.documentElement.dataset.scroll = window.scrollY;
-};
-document.addEventListener("scroll", debounce(storeScroll), {
-  passive: true,
-});
-
-storeScroll();
 class Screen extends Component {
   render() {
     return (
@@ -29,17 +9,17 @@ class Screen extends Component {
         <div className="title">
           <div className="logoimg"></div>
           <div className="titletext">
-            <div className="product">PRODUCT</div>
-            <div className="solutions">SOLUTIONS </div>
-            <div className="company">COMPANY</div>
-            <div className="contact">CONTACT</div>
+            <div className="titleproduct">PRODUCT</div>
+            <div className="titlesolutions">SOLUTIONS </div>
+            <div className="titlecompany">COMPANY</div>
+            <div className="titlecontact">CONTACT</div>
           </div>
         </div>
-        <div className="maintext">
+        <div className="screenmaintext">
           THE FINEST
           <br /> AI Data PLATFORM
         </div>
-        <div className="subtext">
+        <div className="screensubtext">
           Diverse and High Quality Data fitted just for your project
         </div>
         <button className="startbutton">

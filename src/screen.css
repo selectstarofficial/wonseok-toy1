@@ -25,26 +25,6 @@
   z-index: 9999;
   top: 0;
 }
-.screen:not([data-scroll="0"]) .title {
-  padding-top: 2em;
-}
-.screen:not([data-scroll="0"]) .title {
-  position: fixed;
-  top: 0;
-  background-color: blue;
-  color: black;
-}
-.screen:not([data-scroll="0"]) .titletext {
-  position: fixed;
-  color: black;
-}
-
-header {
-  box-sizing: border-box;
-  padding: 1em;
-  -webkit-transition: background-color 0.25s;
-  transition: background-color 0.25s;
-}
 .titletext {
   display: flex;
   flex-direction: row;
@@ -55,7 +35,7 @@ header {
   left: 60%;
   top: 20px;
 }
-.product {
+.titleproduct {
   position: static;
   width: 74px;
   height: 16px;
@@ -74,7 +54,7 @@ header {
   align-self: center;
   margin: 44px 0px;
 }
-.solutions {
+.titlesolutions {
   margin-left: 8%;
   position: relative;
   width: 90px;
@@ -92,7 +72,7 @@ header {
   order: 1;
   align-self: center;
 }
-.company {
+.titlecompany {
   position: relative;
   width: 77px;
   height: 16px;
@@ -110,7 +90,7 @@ header {
   order: 2;
   align-self: center;
 }
-.contact {
+.titlecontact {
   position: static;
   width: 71px;
   height: 16px;
@@ -136,7 +116,7 @@ header {
   left: 15%;
   top: 13.5px;
 }
-.maintext {
+.screenmaintext {
   position: absolute;
   width: 637px;
   height: 137px;
@@ -148,7 +128,7 @@ header {
   margin-top: 250px;
   left: 15%;
 }
-.subtext {
+.screensubtext {
   position: absolute;
   width: 818px;
   height: 23px;
