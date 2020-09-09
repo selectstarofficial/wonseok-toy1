@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./our_projects.css";
+import "./our_products.css";
 import phone1 from "./phone1.png";
 import phone2 from "./phone2.png";
 import phone3 from "./phone3.png";

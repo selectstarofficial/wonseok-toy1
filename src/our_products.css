@@ -54,6 +54,7 @@
   margin-top: 220px;
 }
 .mainview {
+  display: flex;
   width: 1200px;
   height: 820px;
   margin-top: 467px;
