@@ -201,7 +201,7 @@
 .collectionbackground {
   display: flex;
   flex-direction: row;
-  background: #2b8bf4;
+  background: #1e76ec;
   border-radius: 40px;
   width: 108px;
   height: 40px;
@@ -436,7 +436,7 @@
   margin-top: 24px;
 }
 span {
-  color: #0099ff;
+  color: #1e76ec;
 }
 .privacyimg {
   position: absolute;
