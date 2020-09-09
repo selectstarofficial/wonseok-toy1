@@ -81,13 +81,13 @@ class Products extends Component {
                 <div className="locationsubtext">
                   Using the mobile device`s log <br />
                   information, we collect <br />
-                </div>
-                <div className="locationlasttext">
-                  where the data is from, when
-                  <br />
-                  it is collected, and other
-                  <br />
-                  usefull information.
+                  <span>
+                    where the data is from, when
+                    <br />
+                    it is collected, and other
+                    <br />
+                    usefull information.
+                  </span>
                 </div>
               </div>
             </div>
@@ -97,27 +97,61 @@ class Products extends Component {
               <img src={icon2}></img>
               <div className="qualitytext">
                 Quality, size, placement,
-                <br />& more
+                <br />
+                & more
+                <br />
                 <div className="qualitysubtext">
-                  We collect every data in any
-                  <br />
-                  quality, size, object
-                  <br />
-                  placement, or composition.
+                  We collect{" "}
+                  <span>
+                    every data in any
+                    <br />
+                    quality, size, object
+                    <br />
+                    placement, or composition.
+                  </span>
                   <br />
                   We deliver any requests.
                 </div>
               </div>
             </div>
           </div>
-          <div className="privacy">
-            <div className="privacyimg">
-              <div className="privacytext"></div>
+        </div>
+        <div className="privacy">
+          <div className="privacyimg">
+            <img src={icon3}></img>
+            <div className="privacytext">
+              Privacy
+              <div className="privacysubtext">
+                We make sure to blur the
+                <br />
+                sensitive information such as
+                <br />
+                a face or number plates. Our
+                <br />
+                data is anonymous.
+              </div>
             </div>
           </div>
-          <div className="ai">
-            <div className="aiimg">
-              <div className="aitext"></div>
+        </div>
+        <div className="ai">
+          <div className="aiimg">
+            <img src={icon4}></img>
+            <div className="aitext">
+              AI inspection
+              <div className="aisubtext">
+                AI-based inspection
+                <br />
+                algorithm filters similar
+                <br />
+                images.
+                <span>
+                  This prevents
+                  <br />
+                  repeated image submission
+                  <br />
+                  and assures data diversity
+                </span>
+              </div>
             </div>
           </div>
         </div>

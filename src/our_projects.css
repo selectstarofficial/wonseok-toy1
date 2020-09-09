@@ -412,15 +412,8 @@
   line-height: 24px;
   color: #4f4f4f;
 }
-.locationlasttext {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: skyblue;
-}
 .qualityimg {
-  margin-left: 30%;
+  margin-left: 25%;
   margin-top: -11%;
 }
 .qualitytext {
@@ -431,4 +424,64 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
+}
+.qualitysubtext {
+  color: #4f4f4f;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 220px;
+  height: 100px;
+  margin-top: 24px;
+}
+span {
+  color: #0099ff;
+}
+.privacyimg {
+  position: absolute;
+  margin-top: 1400px;
+  margin-left: 53%;
+}
+.privacytext {
+  width: 139px;
+  height: 16px;
+  margin-top: 23px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.privacysubtext {
+  width: 220px;
+  height: 100px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  margin-top: 24px;
+}
+.aiimg {
+  position: absolute;
+  margin-top: 1400px;
+  margin-left: 75%;
+}
+.aitext {
+  margin-top: 23px;
+  width: 139px;
+  height: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.aisubtext {
+  margin-top: 24px;
+  width: 220px;
+  height: 120px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
 }
