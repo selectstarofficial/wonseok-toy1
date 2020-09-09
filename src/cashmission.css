@@ -1,0 +1,71 @@
+.cashmission_cover_page {
+  width: 100%;
+  height: 1345px;
+  background: #f6f9fc;
+}
+.cashmission_main_view {
+  position: absolute;
+  width: 1200px;
+  height: 1344px;
+}
+.top_box_little_text {
+  margin-left: 15%;
+  margin-top: 120px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e76ec;
+  width: 306px;
+  height: 24px;
+}
+.top_box_main_text {
+  margin-top: 8px;
+  width: 474px;
+  height: 280px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #000000;
+}
+.top_box_sub_text {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  width: 494px;
+  height: 110px;
+  color: #7b7e85;
+}
+.top_box_main_img {
+  margin-left: 58%;
+  position: absolute;
+}
+.bottom_box_main_img {
+  margin-top: 600px;
+  margin-left: 13%;
+  position: absolute;
+}
+.bottom_box_main_text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #000000;
+  margin-left: 60%;
+  position: absolute;
+  margin-top: 600px;
+}
+.bottom_box_sub_text {
+  width: 533px;
+  height: 218px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #7b7e85;
+}
