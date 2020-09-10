@@ -57,7 +57,7 @@
   margin-left: 98%;
   position: absolute;
 }
-button {
+.textimonialsbutton {
   z-index: 9999;
   position: absolute;
   width: 40px;

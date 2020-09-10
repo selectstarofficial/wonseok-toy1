@@ -11,12 +11,12 @@ class Textimonials extends Component {
         <div className="textimonials_little_text">TEXTIMONIALS</div>
         <div className="textimonials_main_box">
           <div className="textimonials_left_button">
-            <button>
+            <button className="textimonialsbutton">
               <AiOutlineArrowRight />
             </button>
           </div>
           <div className="textimonials_right_button">
-            <button>
+            <button className="textimonialsbutton">
               <AiOutlineArrowLeft />
             </button>
           </div>
