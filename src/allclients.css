@@ -1,0 +1,29 @@
+.allclinet_cover_page {
+  width: 100%;
+  height: 1228px;
+  background: #f6f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allclient_one {
+  margin-top: 120px;
+}
+.allclient_two {
+  margin-top: 125px;
+}
+.allclient_three {
+  margin-top: 125px;
+}
+.allclient_four {
+  margin-top: 125px;
+}
+.allclient_five {
+  margin-top: 125px;
+}
+.allclient_six {
+  margin-top: 125px;
+}
+.allclient_seven {
+  margin-top: 125px;
+}
