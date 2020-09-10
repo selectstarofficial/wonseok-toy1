@@ -21,7 +21,7 @@ class Name extends Component {
         </div>
         <div className="name_middle_box">
           <div className="name_main_img">
-            <img src={name_main_img}></img>
+            <img src={name_main_img} alt="img"></img>
             <div className="name_middle_main_text1">
               It`s MORE than just a connection
               <div className="name_middle_sub_text1">

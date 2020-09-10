@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./clients.css";
-import styled from "styled-components";
 
 class Clients extends Component {
   render() {

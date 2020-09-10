@@ -11,7 +11,7 @@ class Solution extends Component {
       <div className="solutions_coverpage">
         <div className="solutions_imges">
           <div className="solutions_aiimg">
-            <img src={solution_aiimg}></img>
+            <img src={solution_aiimg} alt="img"></img>
             <div className="solutions_ai_text">
               AI assisted Data Collection/Annotation
               <div className="solutions_ai_subtext">
@@ -23,7 +23,7 @@ class Solution extends Component {
             </div>
           </div>
           <div className="solutions_userimg">
-            <img src={solution_user}></img>
+            <img src={solution_user} alt="img"></img>
             <div className="solutions_user_text">
               User-Centered Task Guidelines
               <div className="solutions_user_subtext">
@@ -35,7 +35,7 @@ class Solution extends Component {
             </div>
           </div>
           <div className="solutions_qualityimg">
-            <img src={solution_quality}></img>
+            <img src={solution_quality} alt="img"></img>
             <div className="solutions_quality_text">
               Quality-Assuring Crowdsourcing
               <br />
@@ -48,7 +48,7 @@ class Solution extends Component {
             </div>
           </div>
           <div className="solutions_mobileimg">
-            <img src={solution_mobile}></img>
+            <img src={solution_mobile} alt="img"></img>
             <div className="solutions_mobile_text">
               Mobile Crowdsourcing to the World
               <div className="solutions_mobile_subtext">

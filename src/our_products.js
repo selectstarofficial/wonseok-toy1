@@ -54,17 +54,17 @@ class Products extends Component {
             <div className="images">
               <div className="coverphone1">
                 <div className="phone1">
-                  <img src={phone1}></img>
+                  <img src={phone1} alt="img"></img>
                 </div>
               </div>
               <div className="coverphone2">
                 <div className="phone2">
-                  <img src={phone2}></img>
+                  <img src={phone2} alt="img"></img>
                 </div>
               </div>
               <div className="coverphone3">
                 <div className="phone3">
-                  <img src={phone3}></img>
+                  <img src={phone3} alt="img"></img>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ class Products extends Component {
         <div className="undertext">
           <div className="location">
             <div className="locationimg">
-              <img src={icon1}></img>
+              <img src={icon1} alt="img"></img>
               <div className="locationtext">
                 Data location,time,
                 <br />
@@ -94,7 +94,7 @@ class Products extends Component {
           </div>
           <div className="quality">
             <div className="qualityimg">
-              <img src={icon2}></img>
+              <img src={icon2} alt="img"></img>
               <div className="qualitytext">
                 Quality, size, placement,
                 <br />
@@ -118,7 +118,7 @@ class Products extends Component {
         </div>
         <div className="privacy">
           <div className="privacyimg">
-            <img src={icon3}></img>
+            <img src={icon3} alt="img"></img>
             <div className="privacytext">
               Privacy
               <div className="privacysubtext">
@@ -135,7 +135,7 @@ class Products extends Component {
         </div>
         <div className="ai">
           <div className="aiimg">
-            <img src={icon4}></img>
+            <img src={icon4} alt="img"></img>
             <div className="aitext">
               AI inspection
               <div className="aisubtext">

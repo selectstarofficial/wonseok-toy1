@@ -38,7 +38,7 @@ class Process extends Component {
           </div>
         </div>
         <div className="process_img">
-          <img src={processimg}></img>
+          <img src={processimg} alt="img"></img>
         </div>
       </div>
     );

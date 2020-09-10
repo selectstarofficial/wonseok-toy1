@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./screen.css";
-import styled from "styled-components";
 
 class Screen extends Component {
   render() {

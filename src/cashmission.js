@@ -27,12 +27,12 @@ class Cashmission extends Component {
               </div>
             </div>
             <div className="top_box_main_img">
-              <img src={cashmission_img1}></img>
+              <img src={cashmission_img1} alt="img"></img>
             </div>
           </div>
           <div className="cashmission_bottom_box">
             <div className="bottom_box_main_img">
-              <img src={cashmission_img2}></img>
+              <img src={cashmission_img2} alt="img"></img>
             </div>
             <div className="bottom_box_main_text">
               SIMPLE MISSION <br />
