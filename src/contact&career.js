@@ -9,7 +9,7 @@ class Contact extends Component {
           <div className="cc_left_box">
             <div className="cc_left_main_text">
               READY YO GET
-              <br /> STARTED
+              <br /> STARTED?
               <dic className="cc_left_sub_button">
                 <button className="cc_button">GET STARTED</button>
               </dic>

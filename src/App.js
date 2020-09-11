@@ -24,8 +24,8 @@ function App() {
       <Cashmission />
       <Textimonials />
       <Allclinets />
-      <Footer />
       <Contact />
+      <Footer />
     </div>
   );
 }
