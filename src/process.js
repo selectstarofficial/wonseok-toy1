@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import processimg from "./processimg.png";
+import processimg from "./img/processimg.png";
 import "./process.css";
 
 class Process extends Component {

@@ -1,0 +1,19 @@
+.classification_cover_page {
+  width: 960px;
+  height: 653px;
+  position: absolute;
+}
+.classification_img {
+  width: 500px;
+  height: 300px;
+}
+.classififcation_img_text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -1px;
+  color: #0948e6;
+}

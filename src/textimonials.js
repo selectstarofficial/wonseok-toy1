@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./textimonials.css";
-import textimonials1 from "./testimonialsimg1.png";
+import textimonials1 from "./img/testimonialsimg1.png";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./solution.css";
-import solution_aiimg from "./solution_ai.png";
-import solution_user from "./solution_user.png";
-import solution_quality from "./solution_quality.png";
-import solution_mobile from "./solution_mobile.png";
+import solution_aiimg from "./img/solution_ai.png";
+import solution_user from "./img/solution_user.png";
+import solution_quality from "./img/solution_quality.png";
+import solution_mobile from "./img/solution_mobile.png";
 
 class Solution extends Component {
   render() {

@@ -1,15 +1,46 @@
 import React, { Component } from "react";
 import "./our_products.css";
-import phone1 from "./phone1.png";
-import phone2 from "./phone2.png";
-import phone3 from "./phone3.png";
-import icon1 from "./product_icon1.png";
-import icon2 from "./product_2.png";
-import icon3 from "./product_3.png";
-import icon4 from "./product4.png";
-
+import { state } from "react";
+import product_img from "./img/secondpageback-img.png";
+import icon1 from "./img/product_icon1.png";
+import icon2 from "./img/product_2.png";
+import icon3 from "./img/product_3.png";
+import icon4 from "./img/product4.png";
+import Classification from "./classification";
+import Tagging from "./tagging";
+import Collection from "./collection";
+import Bounding from "./bounding";
+/* const Change = () => {
+  const [value, setValue] = setState;
+};
+ */
 class Products extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mainView: "collection",
+    };
+  }
+  handleClick(view) {
+    return this.setState(() => ({
+      mainView: view,
+    }));
+  }
   render() {
+    const Mainchange = () => {
+      switch (this.state.mainView) {
+        case "collection":
+          return <Collection />;
+        case "tagging":
+          return <Tagging />;
+        case "classification":
+          return <Classification />;
+        case "bounding":
+          return <Bounding />;
+        default:
+          return <Collection />;
+      }
+    };
     return (
       <div className="coverpage">
         <div className="coverstair">
@@ -38,35 +69,55 @@ class Products extends Component {
         </div>
         <div className="mainview">
           <div className="indexes">
-            <div className="collectionbackground">
-              <div className="collection">collection</div>
+            <div>
+              <Mainchange />
             </div>
-            <div className="tagging">Tagging</div>
-            <div className="classification">Classification</div>
-            <div className="bounding">Bounding box</div>
-            <div className="polyline">Polyline</div>
-            <div className="polygon">polygon</div>
-            <div className="segmentation">Segmentation</div>
-            <div className="key-point">key-point</div>
-            <div className="brush">brush</div>
-            <div className="ocr">OCR</div>
-            <div className="imagetotext">Image to Text</div>
-            <div className="images">
-              <div className="coverphone1">
-                <div className="phone1">
-                  <img src={phone1} alt="img"></img>
-                </div>
+            <div className="collectionbackground">
+              <div
+                onClick={() => this.handleClick("collection")}
+                className="collection"
+              >
+                collection
               </div>
-              <div className="coverphone2">
-                <div className="phone2">
-                  <img src={phone2} alt="img"></img>
-                </div>
-              </div>
-              <div className="coverphone3">
-                <div className="phone3">
-                  <img src={phone3} alt="img"></img>
-                </div>
-              </div>
+            </div>
+            <div
+              onClick={() => this.handleClick("tagging")}
+              className="tagging"
+            >
+              Tagging
+            </div>
+            <div
+              onClick={() => this.handleClick("classification")}
+              className="classification"
+            >
+              Classification
+            </div>
+            <div
+              onClick={() => this.handleClick("bounding")}
+              className="bounding"
+            >
+              Bounding box
+            </div>
+            <div onClick={"polyline"} className="polyline">
+              Polyline
+            </div>
+            <div onClick={"polygon"} className="polygon">
+              polygon
+            </div>
+            <div onClick={"segmentation"} className="segmentation">
+              Segmentation
+            </div>
+            <div onClick={"key-point"} className="key-point">
+              key-point
+            </div>
+            <div onClick={"brush"} className="brush">
+              brush
+            </div>
+            <div onClick={"ocr"} className="ocr">
+              OCR
+            </div>
+            <div onClick={"imagetotext"} className="imagetotext">
+              Image to Text
             </div>
           </div>
         </div>
@@ -155,6 +206,7 @@ class Products extends Component {
             </div>
           </div>
         </div>
+        <img src={product_img} alt="img"></img>
       </div>
     );
   }

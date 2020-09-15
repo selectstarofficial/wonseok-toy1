@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "./screen.css";
+import Products from "./our_products";
+import { Switch, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Screen extends Component {
   render() {
@@ -8,7 +11,11 @@ class Screen extends Component {
         <div className="title">
           <div className="logoimg"></div>
           <div className="titletext">
-            <div className="titleproduct">PRODUCT</div>
+            <div className="titleproduct">
+              <Link className="link" to="/product">
+                PRODUCT
+              </Link>
+            </div>
             <div className="titlesolutions">SOLUTIONS </div>
             <div className="titlecompany">COMPANY</div>
             <div className="titlecontact">CONTACT</div>
@@ -27,6 +34,9 @@ class Screen extends Component {
         <button className="logobutton">
           <div className="logobuttonimg"></div>
         </button>
+        <Switch>
+          <Route path="/product" component={Products} />
+        </Switch>
       </div>
     );
   }

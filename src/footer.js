@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./footer.css";
-import footer from "./footer_img.png";
-import footer2 from "./footerbottom2.png";
+import footer from "./img/footer_img.png";
+import footer2 from "./img/footerbottom2.png";
 
 class Footer extends Component {
   render() {

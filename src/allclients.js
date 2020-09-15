@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./allclients.css";
-import allclient_one from "./allclients_one.png";
-import allclient_two from "./allclient_two.png";
-import allclient_three from "./allclient_three.png";
-import allclient_four from "./allclient_four.png";
-import allclient_five from "./allclient_five.png";
-import allclient_six from "./allclient_six.png";
-import allclient_seven from "./allclient_seven.png";
+import allclient_one from "./img/allclients_one.png";
+import allclient_two from "./img/allclient_two.png";
+import allclient_three from "./img/allclient_three.png";
+import allclient_four from "./img/allclient_four.png";
+import allclient_five from "./img/allclient_five.png";
+import allclient_six from "./img/allclient_six.png";
+import allclient_seven from "./img/allclient_seven.png";
 
 class Allclient extends Component {
   render() {

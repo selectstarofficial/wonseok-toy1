@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./cashmission.css";
-import cashmission_img1 from "./cashmission1.png";
-import cashmission_img2 from "./cashmission2.png";
+import cashmission_img1 from "./img/cashmission1.png";
+import cashmission_img2 from "./img/cashmission2.png";
 
 class Cashmission extends Component {
   render() {

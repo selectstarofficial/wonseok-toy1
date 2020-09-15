@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./name.css";
-import name_main_img from "./name_main_img.png";
+import name_main_img from "./img/name_main_img.png";
 class Name extends Component {
   render() {
     return (
