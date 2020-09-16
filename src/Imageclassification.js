@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./classification.css";
 import phone1 from "./img/phone1.png";
 
-class Classification extends Component {
+class ImageClassification extends Component {
   render() {
     return (
       <div className="classification_cover_page">
@@ -16,4 +16,4 @@ class Classification extends Component {
     );
   }
 }
-export default Classification;
+export default ImageClassification;

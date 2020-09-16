@@ -4,7 +4,7 @@ import phone1 from "./img/phone1.png";
 import phone2 from "./img/phone2.png";
 import phone3 from "./img/phone3.png";
 
-class Collection extends Component {
+class ImageCollection extends Component {
   render() {
     return (
       <div className="images">
@@ -27,4 +27,4 @@ class Collection extends Component {
     );
   }
 }
-export default Collection;
+export default ImageCollection;

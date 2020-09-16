@@ -1,6 +1,7 @@
 .tagging_cover_page {
-  width: 960px;
-  height: 653px;
+  width: 460px;
+  height: 453px;
+  margin-left: 50%;
   position: absolute;
 }
 .tagging_img {

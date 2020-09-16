@@ -1,11 +1,13 @@
 .classification_cover_page {
-  width: 960px;
-  height: 653px;
+  width: 260px;
+  height: 253px;
   position: absolute;
+  margin-left: 50%;
 }
 .classification_img {
-  width: 500px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
+  margin-left: 50%;
 }
 .classififcation_img_text {
   font-style: normal;

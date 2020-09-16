@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./tagging.css";
 import phone2 from "./img/phone2.png";
 
-class Tagging extends Component {
+class ImageTagging extends Component {
   render() {
     return (
       <div className="tagging_cover_page">
@@ -16,4 +16,4 @@ class Tagging extends Component {
     );
   }
 }
-export default Tagging;
+export default ImageTagging;

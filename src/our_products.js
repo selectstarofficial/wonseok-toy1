@@ -1,15 +1,21 @@
 import React, { Component } from "react";
 import "./our_products.css";
-import { state } from "react";
 import product_img from "./img/secondpageback-img.png";
 import icon1 from "./img/product_icon1.png";
 import icon2 from "./img/product_2.png";
 import icon3 from "./img/product_3.png";
 import icon4 from "./img/product4.png";
-import Classification from "./classification";
-import Tagging from "./tagging";
-import Collection from "./collection";
-import Bounding from "./bounding";
+import ImageClassification from "./Imageclassification";
+import ImageTagging from "./Imagetagging";
+import ImageCollection from "./Imagecollection";
+import ImageBounding from "./Imagebounding";
+import ImagePolyline from "./polyline";
+import ImagePolygon from "./Imagepolygon";
+import ImageSegmentation from "./segmentation";
+import Imagekeypoint from "./imagekey-point";
+import Brush from "./brush";
+import Ocr from "./ocr";
+import Imagetotext from "./imagetotext";
 /* const Change = () => {
   const [value, setValue] = setState;
 };
@@ -18,27 +24,41 @@ class Products extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mainView: "collection",
+      mainView: "imagecollection",
     };
   }
-  handleClick(view) {
-    return this.setState(() => ({
+  handleClick = (view) => {
+    this.setState({
       mainView: view,
-    }));
-  }
+    });
+  };
   render() {
     const Mainchange = () => {
       switch (this.state.mainView) {
-        case "collection":
-          return <Collection />;
-        case "tagging":
-          return <Tagging />;
-        case "classification":
-          return <Classification />;
-        case "bounding":
-          return <Bounding />;
+        case "imagecollection":
+          return <ImageCollection />;
+        case "imagetagging":
+          return <ImageTagging />;
+        case "imageclassification":
+          return <ImageClassification />;
+        case "imagebounding":
+          return <ImageBounding />;
+        case "imagepolyline":
+          return <ImagePolyline />;
+        case "imagepolygon":
+          return <ImagePolygon />;
+        case "imagesegmentation":
+          return <ImageSegmentation />;
+        case "imagekey-point":
+          return <Imagekeypoint />;
+        case "brush":
+          return <Brush />;
+        case "ocr":
+          return <Ocr />;
+        case "imagetotext":
+          return <Imagetotext />;
         default:
-          return <Collection />;
+          return <ImageCollection />;
       }
     };
     return (
@@ -74,49 +94,67 @@ class Products extends Component {
             </div>
             <div className="collectionbackground">
               <div
-                onClick={() => this.handleClick("collection")}
+                onClick={this.handleClick.bind(this, "imagecollection")}
                 className="collection"
               >
                 collection
               </div>
             </div>
             <div
-              onClick={() => this.handleClick("tagging")}
+              onClick={this.handleClick.bind(this, "imagetagging")}
               className="tagging"
             >
               Tagging
             </div>
             <div
-              onClick={() => this.handleClick("classification")}
+              onClick={this.handleClick.bind(this, "imageclassification")}
               className="classification"
             >
               Classification
             </div>
             <div
-              onClick={() => this.handleClick("bounding")}
+              onClick={this.handleClick.bind(this, "imagebounding")}
               className="bounding"
             >
               Bounding box
             </div>
-            <div onClick={"polyline"} className="polyline">
+            <div
+              onClick={this.handleClick.bind(this, "imagepolyline")}
+              className="polyline"
+            >
               Polyline
             </div>
-            <div onClick={"polygon"} className="polygon">
+            <div
+              onClick={this.handleClick.bind(this, "imagepolygon")}
+              className="polygon"
+            >
               polygon
             </div>
-            <div onClick={"segmentation"} className="segmentation">
+            <div
+              onClick={this.handleClick.bind(this, "imagesegmentation")}
+              className="segmentation"
+            >
               Segmentation
             </div>
-            <div onClick={"key-point"} className="key-point">
+            <div
+              onClick={this.handleClick.bind(this, "imagekey-point")}
+              className="key-point"
+            >
               key-point
             </div>
-            <div onClick={"brush"} className="brush">
+            <div
+              onClick={this.handleClick.bind(this, "brush")}
+              className="brush"
+            >
               brush
             </div>
-            <div onClick={"ocr"} className="ocr">
+            <div onClick={this.handleClick.bind(this, "ocr")} className="ocr">
               OCR
             </div>
-            <div onClick={"imagetotext"} className="imagetotext">
+            <div
+              onClick={this.handleClick.bind(this, "imagetotext")}
+              className="imagetotext"
+            >
               Image to Text
             </div>
           </div>
