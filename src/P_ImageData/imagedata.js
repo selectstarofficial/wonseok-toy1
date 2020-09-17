@@ -9,6 +9,7 @@ import ImageSegmentation from "./I_Segmentation/segmentation";
 import Imagekeypoint from "./I_KeyPoint/imagekey-point";
 import Brush from "./I_Brush/I_Brush";
 import Ocr from "./I_Ocr/ocr";
+import "./imagedata.css";
 import Imagetotext from "./I_ImageToText/imagetotext";
 
 class ImageData extends Component {
@@ -23,6 +24,7 @@ class ImageData extends Component {
       imageView: image,
     });
   };
+
   render() {
     const ImageMainchange = () => {
       switch (this.state.imageView) {
@@ -54,7 +56,11 @@ class ImageData extends Component {
     };
     return (
       <div className="indexes">
-        <div className="active"></div>
+        <div
+          className={`active ${
+            this.state.mainView === "collection" && "active"
+          }`}
+        ></div>
         <div>
           <ImageMainchange />
         </div>

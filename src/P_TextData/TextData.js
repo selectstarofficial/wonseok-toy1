@@ -19,7 +19,7 @@ class TextData extends Component {
   };
   render() {
     const AudioChange = () => {
-      switch (this.state.audioView) {
+      switch (this.state.textView) {
         case "Text_Collection":
           return <TextCollection />;
         case "Text_Classification":
