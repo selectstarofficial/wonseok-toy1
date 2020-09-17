@@ -9,7 +9,7 @@
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url("screen.png");
+    url("img/screen.png");
   background-size: 100%;
   mix-blend-mode: normal;
   background-repeat: no-repeat;
@@ -109,7 +109,6 @@
   align-self: center;
 }
 .logoimg {
-  background-image: url("color_h_500px_6 1.png");
   position: absolute;
   width: 180px;
   height: 25px;
@@ -189,6 +188,4 @@
   position: relative;
   width: 38.77px;
   height: 38.77px;
-  background-image: url("smalllogo.png");
-  background-repeat: no-repeat;
 }

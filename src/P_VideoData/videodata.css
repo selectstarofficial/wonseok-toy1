@@ -1,0 +1,62 @@
+.video_indexes {
+  width: 138px;
+  height: 680px;
+  margin-left: 5%;
+  background-color: white;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.video_collection {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7b7e85;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.video_tagging {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7b7e85;
+  margin-top: 42px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+.video_classification {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 20px;
+  color: #7b7e85;
+  margin-top: 42px;
+  margin-left: 10%;
+}
+.video_bounding {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7b7e85;
+  cursor: pointer;
+  margin-top: 42px;
+  margin-left: 10%;
+}
+.video_polygon {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7b7e85;
+  margin-top: 42px;
+  cursor: pointer;
+  margin-left: 10%;
+}

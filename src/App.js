@@ -1,16 +1,16 @@
 import React from "react";
 import "./App.css";
-import Clients from "./clients";
-import Screen from "./screen";
-import Products from "./our_products";
-import Solutions from "./solutions";
-import Process from "./process";
-import Name from "./name";
-import Cashmission from "./cashmission";
-import Textimonials from "./textimonials";
-import Allclinets from "./allclients";
-import Contact from "./contact&career";
-import Footer from "./footer";
+import Clients from "./A_Clients/clients";
+import Screen from "./A_Screen/screen";
+import Products from "./A_Products/products";
+import Solutions from "./A_Solutions/solutions";
+import Process from "./A_Process/process";
+import Name from "./A_Name/name";
+import Cashmission from "./A_Cashmission/cashmission";
+import Textimonials from "./A_Textimonials/textimonials";
+import Allclinets from "./A_AllClients/allclients";
+import Contact from "./A_Contact/contact&career";
+import Footer from "./A_Footer/footer";
 
 function App() {
   return (

@@ -1,30 +1,25 @@
 import React, { Component } from "react";
-import "./our_products.css";
+import "./products.css";
+import product_image from "./img/image.png";
+import product_video from "./img/video.png";
+import product_audio from "./img/audio.png";
+import product_text from "./img/text.png";
+import product_last from "./img/last.png";
 import product_img from "./img/secondpageback-img.png";
 import icon1 from "./img/product_icon1.png";
 import icon2 from "./img/product_2.png";
 import icon3 from "./img/product_3.png";
 import icon4 from "./img/product4.png";
-import ImageClassification from "./Imageclassification";
-import ImageTagging from "./Imagetagging";
-import ImageCollection from "./Imagecollection";
-import ImageBounding from "./Imagebounding";
-import ImagePolyline from "./polyline";
-import ImagePolygon from "./Imagepolygon";
-import ImageSegmentation from "./segmentation";
-import Imagekeypoint from "./imagekey-point";
-import Brush from "./brush";
-import Ocr from "./ocr";
-import Imagetotext from "./imagetotext";
-/* const Change = () => {
-  const [value, setValue] = setState;
-};
- */
+import ImageData from "../P_ImageData/imagedata";
+import VideoData from "../P_VideoData/videodata";
+import AudioData from "../P_AudioData/AudioData";
+import TextData from "../P_TextData/TextData";
+import GetStart from "../P_GetStart/GetStart";
 class Products extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mainView: "imagecollection",
+      mainView: "imagedata",
     };
   }
   handleClick = (view) => {
@@ -35,30 +30,18 @@ class Products extends Component {
   render() {
     const Mainchange = () => {
       switch (this.state.mainView) {
-        case "imagecollection":
-          return <ImageCollection />;
-        case "imagetagging":
-          return <ImageTagging />;
-        case "imageclassification":
-          return <ImageClassification />;
-        case "imagebounding":
-          return <ImageBounding />;
-        case "imagepolyline":
-          return <ImagePolyline />;
-        case "imagepolygon":
-          return <ImagePolygon />;
-        case "imagesegmentation":
-          return <ImageSegmentation />;
-        case "imagekey-point":
-          return <Imagekeypoint />;
-        case "brush":
-          return <Brush />;
-        case "ocr":
-          return <Ocr />;
-        case "imagetotext":
-          return <Imagetotext />;
+        case "ImageData":
+          return <ImageData />;
+        case "VideoData":
+          return <VideoData />;
+        case "AudioData":
+          return <AudioData />;
+        case "GetStart":
+          return <GetStart />;
+        case "TextData":
+          return <TextData />;
         default:
-          return <ImageCollection />;
+          return <ImageData />;
       }
     };
     return (
@@ -72,91 +55,74 @@ class Products extends Component {
         </div>
         <div className="data">
           <div className="image">
-            <div className="coverimagetext">Image Data</div>
+            <div
+              onClick={this.handleClick.bind(this, "ImageData")}
+              className="coverimagetext"
+            >
+              <img
+                src={product_image}
+                alt="img"
+                className="product_image_img"
+              ></img>
+              Image Data
+            </div>
           </div>
           <div className="video">
-            <div className="covervideotext">Video Data</div>
+            <div
+              onClick={this.handleClick.bind(this, "VideoData")}
+              className="covervideotext"
+            >
+              <img
+                src={product_video}
+                alt="img"
+                className="product_video_img"
+              ></img>
+              Video Data
+            </div>
           </div>
           <div className="audio">
-            <div className="coveraudiotext">Audio Data</div>
+            <div
+              onClick={this.handleClick.bind(this, "AudioData")}
+              className="coveraudiotext"
+            >
+              <img
+                src={product_audio}
+                alt="img"
+                className="product_audio_img"
+              ></img>
+              Audio Data
+            </div>
           </div>
           <div className="text-document">
-            <div className="covertext-documenttext">Text/Document Data</div>
+            <div
+              onClick={this.handleClick.bind(this, "TextData")}
+              className="covertext-documenttext"
+            >
+              <img
+                src={product_text}
+                alt="img"
+                className="product_text_img"
+              ></img>
+              Text/Document Data
+            </div>
           </div>
-          <dic className="anythingyouwant">
-            <div className="coveranythingyouwanttext">Anything You Want</div>
-          </dic>
+          <div className="anythingyouwant">
+            <div
+              onClick={this.handleClick.bind(this, "GetStart")}
+              className="coveranythingyouwanttext"
+            >
+              <img
+                src={product_last}
+                alt="img"
+                className="product_last_img"
+              ></img>
+              Anything You Want
+            </div>
+          </div>
         </div>
         <div className="mainview">
-          <div className="indexes">
-            <div>
-              <Mainchange />
-            </div>
-            <div className="collectionbackground">
-              <div
-                onClick={this.handleClick.bind(this, "imagecollection")}
-                className="collection"
-              >
-                collection
-              </div>
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "imagetagging")}
-              className="tagging"
-            >
-              Tagging
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "imageclassification")}
-              className="classification"
-            >
-              Classification
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "imagebounding")}
-              className="bounding"
-            >
-              Bounding box
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "imagepolyline")}
-              className="polyline"
-            >
-              Polyline
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "imagepolygon")}
-              className="polygon"
-            >
-              polygon
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "imagesegmentation")}
-              className="segmentation"
-            >
-              Segmentation
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "imagekey-point")}
-              className="key-point"
-            >
-              key-point
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "brush")}
-              className="brush"
-            >
-              brush
-            </div>
-            <div onClick={this.handleClick.bind(this, "ocr")} className="ocr">
-              OCR
-            </div>
-            <div
-              onClick={this.handleClick.bind(this, "imagetotext")}
-              className="imagetotext"
-            >
-              Image to Text
-            </div>
+          <div>
+            <Mainchange />
           </div>
         </div>
         <div className="undertext">
@@ -244,7 +210,11 @@ class Products extends Component {
             </div>
           </div>
         </div>
-        <img src={product_img} alt="img"></img>
+        <img
+          src={product_img}
+          alt="img"
+          className="product_background_img"
+        ></img>
       </div>
     );
   }

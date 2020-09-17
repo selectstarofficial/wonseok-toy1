@@ -43,6 +43,7 @@
   color: #ffffff;
   flex-direction: row;
   margin-top: 30px;
+  cursor: pointer;
   background: #000000;
   border-radius: 30px;
   display: flex;
@@ -93,4 +94,5 @@
   color: #ffffff;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }

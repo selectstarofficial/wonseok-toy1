@@ -1,0 +1,8 @@
+.active {
+  display: flex;
+  flex-direction: row;
+  background: #1e76ec;
+  border-radius: 40px;
+  width: 108px;
+  height: 40px;
+}

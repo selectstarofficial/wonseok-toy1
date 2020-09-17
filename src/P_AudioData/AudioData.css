@@ -1,0 +1,62 @@
+.Aideo_Indexes {
+  width: 138px;
+  height: 680px;
+  margin-left: 5%;
+  background-color: white;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.Audio_Collection {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7b7e85;
+  display: flex;
+  align-items: center;
+}
+.Audio_Tagging {
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7b7e85;
+  margin-top: 42px;
+  margin-left: 10%;
+}
+.Audio_Classification {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  color: #7b7e85;
+  margin-top: 42px;
+  margin-left: 10%;
+}
+.Audio_Editing {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7b7e85;
+  cursor: pointer;
+  margin-top: 42px;
+  margin-left: 10%;
+}
+.Audio_AudiotoText {
+  font-style: normal;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7b7e85;
+  margin-top: 42px;
+  margin-left: 10%;
+}

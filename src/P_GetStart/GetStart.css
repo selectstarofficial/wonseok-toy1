@@ -1,0 +1,78 @@
+.GetStart_cover_page {
+  width: 1200px;
+  height: 820px;
+  background: linear-gradient(
+      122.3deg,
+      #ffffff 17.18%,
+      rgba(213, 255, 245, 0.755208) 42.36%,
+      rgba(170, 194, 255, 0.505208) 59.49%,
+      rgba(254, 233, 178, 0.277899) 74.67%,
+      rgba(255, 255, 255, 0) 90.91%
+    ),
+    url("img/anytingbackground.png");
+  background-position: 50%;
+  background-size: cover;
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.GetStart_text_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.GetStart_maintext {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  width: 773px;
+  height: 138px;
+  margin-bottom: 474px;
+  letter-spacing: -1px;
+  color: #000000;
+}
+.GetStart_subtext {
+  margin-top: 40px;
+  width: 820px;
+  height: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+.GetStart_sublittletext {
+  margin-top: 20px;
+  width: 777px;
+  height: 48px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.GetStart_button {
+  margin-top: 40px;
+}
+.GetStart_bbutton {
+  cursor: pointer;
+  position: absolute;
+  width: 149px;
+  height: 44px;
+  background: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}

@@ -5,14 +5,14 @@ class Contact extends Component {
   render() {
     return (
       <div className="cc_cover_page">
-        <dic className="cc_main_view">
+        <div className="cc_main_view">
           <div className="cc_left_box">
             <div className="cc_left_main_text">
               READY YO GET
               <br /> STARTED?
-              <dic className="cc_left_sub_button">
+              <div className="cc_left_sub_button">
                 <button className="cc_button">GET STARTED</button>
-              </dic>
+              </div>
             </div>
           </div>
           <div className="cc_right_box">
@@ -23,7 +23,7 @@ class Contact extends Component {
               </div>
             </div>
           </div>
-        </dic>
+        </div>
       </div>
     );
   }
