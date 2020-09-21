@@ -57,6 +57,7 @@ class Solution extends Component {
               </div>
             </div>
           </div>
+          <div className="solutuins_empty"></div>
         </div>
       </div>
     );
