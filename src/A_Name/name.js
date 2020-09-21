@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./name.css";
-import ReactPlayer from "react-player ";
+import Selectstarvideo from "./video/selectstar.b97543d9.mp4";
 class Name extends Component {
   render() {
     return (
@@ -21,11 +21,9 @@ class Name extends Component {
         </div>
         <div className="name_middle_box">
           <div className="name_main_img">
-            <ReactPlayer
-              url="https://selectstar.ai/static/media/selectstar.b97543d9.mp4"
-              playing
-              controls
-            />
+            <video className="name_video" controls autoPlay loop muted>
+              <source src={Selectstarvideo} />
+            </video>
             <div className="name_middle_main_text1">
               It`s MORE than just a connection
               <div className="name_middle_sub_text1">

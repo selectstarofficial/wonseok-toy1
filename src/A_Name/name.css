@@ -14,6 +14,9 @@
       #ffffff 65.22%
     );
 }
+.name_top_box {
+  display: flex;
+}
 .name_little_text {
   width: 137px;
   height: 24px;
@@ -184,4 +187,12 @@
   margin-top: 22px;
   line-height: 24px;
   color: #000000;
+}
+.name_video {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 1200px;
+  height: 800px;
+  margin-left: 10%;
 }

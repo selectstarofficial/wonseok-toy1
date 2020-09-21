@@ -3,7 +3,7 @@ import "./products.css";
 import product_image from "./img/image.png";
 import product_video from "./img/video.png";
 import product_audio from "./img/audio.png";
-import product_text from "./img/text.png";
+import product_text from "./img/Group.png";
 import product_last from "./img/last.png";
 import product_img from "./img/secondpageback-img.png";
 import icon1 from "./img/product_icon1.png";
@@ -54,7 +54,11 @@ class Products extends Component {
           <div className="secondtext">DATA COLLECTION / ANNOTATION</div>
         </div>
         <div className="data">
-          <div className="image">
+          <div
+            className={`image ${
+              this.state.mainView === "ImageData" && "main_active"
+            }`}
+          >
             <div
               onClick={this.handleClick.bind(this, "ImageData")}
               className={`coverimagetext ${
@@ -64,7 +68,9 @@ class Products extends Component {
               <img
                 src={product_image}
                 alt="img"
-                className="product_image_img"
+                className={`product_image_img ${
+                  this.state.mainView === "ImageData" && "image_active"
+                }`}
               ></img>
               Image Data
             </div>
@@ -79,7 +85,9 @@ class Products extends Component {
               <img
                 src={product_video}
                 alt="img"
-                className="product_video_img"
+                className={`product_video_img ${
+                  this.state.mainView === "VideoData" && "image_active"
+                }`}
               ></img>
               Video Data
             </div>
@@ -94,7 +102,9 @@ class Products extends Component {
               <img
                 src={product_audio}
                 alt="img"
-                className="product_audio_img"
+                className={`product_audio_img ${
+                  this.state.mainView === "AudioData" && "image_active"
+                }`}
               ></img>
               Audio Data
             </div>
@@ -109,7 +119,9 @@ class Products extends Component {
               <img
                 src={product_text}
                 alt="img"
-                className="product_text_img"
+                className={`product_text_img ${
+                  this.state.mainView === "TextData" && "image_active"
+                }`}
               ></img>
               Text/Document Data
             </div>
@@ -124,7 +136,9 @@ class Products extends Component {
               <img
                 src={product_last}
                 alt="img"
-                className="product_last_img"
+                className={`product_last_img ${
+                  this.state.mainView === "GetStart" && "image_active"
+                }`}
               ></img>
               Anything You Want
             </div>

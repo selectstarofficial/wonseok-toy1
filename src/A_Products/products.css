@@ -419,24 +419,32 @@ span {
 }
 .product_image_img {
   width: 36px;
+  opacity: 0.5;
   height: 40px;
 }
 .product_video_img {
   width: 36px;
+  opacity: 0.5;
   height: 40px;
 }
 .product_audio_img {
   width: 36px;
+  opacity: 0.5;
   height: 40px;
 }
 .product_text_img {
   width: 36px;
   height: 40px;
+  opacity: 0.5;
 }
 .product_last_img {
   width: 36px;
   height: 40px;
+  opacity: 0.5;
 }
 .main_active {
   color: black;
+}
+.image_active {
+  opacity: 1;
 }
