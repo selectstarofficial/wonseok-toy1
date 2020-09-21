@@ -91,7 +91,7 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+  color: #999999;
   margin-top: 5%;
   cursor: pointer;
   margin-left: 10%;
@@ -436,4 +436,7 @@ span {
 .product_last_img {
   width: 36px;
   height: 40px;
+}
+.main_active {
+  color: black;
 }

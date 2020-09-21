@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./name.css";
-import name_main_img from "./img/name_main_img.png";
+import ReactPlayer from "react-player ";
 class Name extends Component {
   render() {
     return (
@@ -21,7 +21,11 @@ class Name extends Component {
         </div>
         <div className="name_middle_box">
           <div className="name_main_img">
-            <img src={name_main_img} alt="img"></img>
+            <ReactPlayer
+              url="https://selectstar.ai/static/media/selectstar.b97543d9.mp4"
+              playing
+              controls
+            />
             <div className="name_middle_main_text1">
               It`s MORE than just a connection
               <div className="name_middle_sub_text1">

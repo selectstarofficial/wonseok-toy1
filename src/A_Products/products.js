@@ -19,7 +19,7 @@ class Products extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mainView: "imagedata",
+      mainView: "ImageData",
     };
   }
   handleClick = (view) => {
@@ -57,7 +57,9 @@ class Products extends Component {
           <div className="image">
             <div
               onClick={this.handleClick.bind(this, "ImageData")}
-              className="coverimagetext"
+              className={`coverimagetext ${
+                this.state.mainView === "ImageData" && "main_active"
+              }`}
             >
               <img
                 src={product_image}
@@ -70,7 +72,9 @@ class Products extends Component {
           <div className="video">
             <div
               onClick={this.handleClick.bind(this, "VideoData")}
-              className="covervideotext"
+              className={`covervideotext ${
+                this.state.mainView === "VideoData" && "main_active"
+              }`}
             >
               <img
                 src={product_video}
@@ -83,7 +87,9 @@ class Products extends Component {
           <div className="audio">
             <div
               onClick={this.handleClick.bind(this, "AudioData")}
-              className="coveraudiotext"
+              className={`coveraudiotext ${
+                this.state.mainView === "AudioData" && "main_active"
+              }`}
             >
               <img
                 src={product_audio}
@@ -96,7 +102,9 @@ class Products extends Component {
           <div className="text-document">
             <div
               onClick={this.handleClick.bind(this, "TextData")}
-              className="covertext-documenttext"
+              className={`covertext-documenttext ${
+                this.state.mainView === "TextData" && "main_active"
+              }`}
             >
               <img
                 src={product_text}
@@ -109,7 +117,9 @@ class Products extends Component {
           <div className="anythingyouwant">
             <div
               onClick={this.handleClick.bind(this, "GetStart")}
-              className="coveranythingyouwanttext"
+              className={`coveranythingyouwanttext ${
+                this.state.mainView === "GetStart" && "main_active"
+              }`}
             >
               <img
                 src={product_last}

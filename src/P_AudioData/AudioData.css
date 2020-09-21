@@ -60,3 +60,12 @@
   margin-top: 42px;
   margin-left: 10%;
 }
+.Audio_active {
+  display: flex;
+  flex-direction: row;
+  background: #1e76ec;
+  border-radius: 40px;
+  color: white;
+  width: 108px;
+  height: 40px;
+}

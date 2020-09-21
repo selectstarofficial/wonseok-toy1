@@ -24,7 +24,7 @@ class TextData extends Component {
           return <TextCollection />;
         case "Text_Classification":
           return <TextClassification />;
-        case "Text_Entity Tagging":
+        case "Text_EntityTagging":
           return <TextEntityTagging />;
         case "Text_Q&A":
           return <TextQA />;
@@ -35,37 +35,47 @@ class TextData extends Component {
       }
     };
     return (
-      <div className="Audio_Indexes">
+      <div className="Text_Indexes">
         <AudioChange />
         <div
           onClick={this.audiohandleClick.bind(this, "Text_Collection")}
-          className="Audio_Collection"
+          className={`Text_Collection ${
+            this.state.textView === "Text_Collection" && "Text_active"
+          }`}
         >
           Collection
         </div>
         <div
           onClick={this.audiohandleClick.bind(this, "Text_Classification")}
-          className="Audio_Tagging"
-        >
-          Tagging
-        </div>
-        <div
-          onClick={this.audiohandleClick.bind(this, "Text_Entity Tagging")}
-          className="Audio_Classification"
+          className={`Text_Classification ${
+            this.state.textView === "Text_Classification" && "Text_active"
+          }`}
         >
           Classification
         </div>
         <div
-          onClick={this.audiohandleClick.bind(this, "Text_Q&A")}
-          className="Audio_Editing"
+          onClick={this.audiohandleClick.bind(this, "Text_EntityTagging")}
+          className={`Text_EntityTagging ${
+            this.state.textView === "Text_EntityTagging" && "Text_active"
+          }`}
         >
-          Editing
+          Entity Tagging
+        </div>
+        <div
+          onClick={this.audiohandleClick.bind(this, "Text_Q&A")}
+          className={`Text_QandA ${
+            this.state.textView === "Text_Q&A" && "Text_active"
+          }`}
+        >
+          Q&A
         </div>
         <div
           onClick={this.audiohandleClick.bind(this, "Text_TexttoAudio")}
-          className="Audio_AudiotoText"
+          className={`Text_TexttoAudio ${
+            this.state.textView === "Text_TexttoAudio" && "Text_active"
+          }`}
         >
-          Audio to Text
+          Text to Audio
         </div>
       </div>
     );

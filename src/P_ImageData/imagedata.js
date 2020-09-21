@@ -16,7 +16,7 @@ class ImageData extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageView: "imagecollection",
+      imageView: "Image_Collection",
     };
   }
   imagehandleClick = (image) => {
@@ -28,27 +28,27 @@ class ImageData extends Component {
   render() {
     const ImageMainchange = () => {
       switch (this.state.imageView) {
-        case "imagecollection":
+        case "Image_Collection":
           return <ImageCollection />;
-        case "imagetagging":
+        case "Image_Tagging":
           return <ImageTagging />;
-        case "imageclassification":
+        case "Image_Classification":
           return <ImageClassification />;
-        case "imagebounding":
+        case "Image_Bounding":
           return <ImageBounding />;
-        case "imagepolyline":
+        case "Image_Polyline":
           return <ImagePolyline />;
-        case "imagepolygon":
+        case "Image_Polygon":
           return <ImagePolygon />;
-        case "imagesegmentation":
+        case "Image_Segmentation":
           return <ImageSegmentation />;
-        case "imagekey-point":
+        case "Image_Key-point":
           return <Imagekeypoint />;
-        case "brush":
+        case "Image_Brush":
           return <Brush />;
-        case "ocr":
+        case "Image_Ocr":
           return <Ocr />;
-        case "imagetotext":
+        case "Image_Imagetotext":
           return <Imagetotext />;
         default:
           return <ImageCollection />;
@@ -60,80 +60,90 @@ class ImageData extends Component {
           <ImageMainchange />
         </div>
         <div
-          className={`active ${
-            this.state.imageView === "collection" && "active"
+          onClick={this.imagehandleClick.bind(this, "Image_Collection")}
+          className={`collection ${
+            this.state.imageView === "Image_Collection" && "active"
           }`}
         >
-          <div
-            onClick={this.imagehandleClick.bind(this, "imagecollection")}
-            className={`collection ${
-              this.state.imageView === "collection" && "active"
-            }`}
-          >
-            Collection
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "imagetagging")}
-            className={`tagging ${
-              this.state.imageView === "tagging" && "active"
-            }`}
-          >
-            Tagging
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "imageclassification")}
-            className="classification"
-          >
-            Classification
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "imagebounding")}
-            className="bounding"
-          >
-            Bounding box
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "imagepolyline")}
-            className="polyline"
-          >
-            Polyline
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "imagepolygon")}
-            className="polygon"
-          >
-            polygon
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "imagesegmentation")}
-            className="segmentation"
-          >
-            Segmentation
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "imagekey-point")}
-            className="key-point"
-          >
-            key-point
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "brush")}
-            className="brush"
-          >
-            brush
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "ocr")}
-            className="ocr"
-          >
-            OCR
-          </div>
-          <div
-            onClick={this.imagehandleClick.bind(this, "imagetotext")}
-            className="imagetotext"
-          >
-            Image to Text
-          </div>
+          Collection
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Tagging")}
+          className={`tagging ${
+            this.state.imageView === "Image_Tagging" && "active"
+          }`}
+        >
+          Tagging
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Classification")}
+          className={`classification ${
+            this.state.imageView === "Image_Classification" && "active"
+          }`}
+        >
+          Classification
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Bounding")}
+          className={`bounding ${
+            this.state.imageView === "Image_Bounding" && "active"
+          }`}
+        >
+          Bounding box
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Polyline")}
+          className={`polyline ${
+            this.state.imageView === "Image_Polyline" && "active"
+          }`}
+        >
+          Polyline
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Polygon")}
+          className={`polygon ${
+            this.state.imageView === "Image_Polygon" && "active"
+          }`}
+        >
+          polygon
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Segmentation")}
+          className={`segmentation ${
+            this.state.imageView === "Image_Segmentation" && "active"
+          }`}
+        >
+          Segmentation
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Key-point")}
+          className={`key-point ${
+            this.state.imageView === "Image_Key-point" && "active"
+          }`}
+        >
+          key-point
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Brush")}
+          className={`brush ${
+            this.state.imageView === "Image_Brush" && "active"
+          }`}
+        >
+          brush
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Ocr")}
+          className={`ocr ${this.state.imageView === "Image_Ocr" && "active"}`}
+        >
+          OCR
+        </div>
+        <div
+          onClick={this.imagehandleClick.bind(this, "Image_Imagetotext")}
+          className={`imagetotext ${
+            this.state.imageView === "Image_Imagetotext" && "active"
+          }`}
+        >
+          Image to Text
         </div>
       </div>
     );

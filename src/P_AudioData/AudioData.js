@@ -39,31 +39,41 @@ class AudioData extends Component {
         <AudioChange />
         <div
           onClick={this.audiohandleClick.bind(this, "Audio_Collection")}
-          className="Audio_Collection"
+          className={`Audio_Collection ${
+            this.state.audioView === "Audio_Collection" && "Audio_active"
+          }`}
         >
           Collection
         </div>
         <div
           onClick={this.audiohandleClick.bind(this, "Audio_Tagging")}
-          className="Audio_Tagging"
+          className={`Audio_Tagging ${
+            this.state.audioView === "Audio_Tagging" && "Audio_active"
+          }`}
         >
           Tagging
         </div>
         <div
           onClick={this.audiohandleClick.bind(this, "Audio_Classification")}
-          className="Audio_Classification"
+          className={`Audio_Classification ${
+            this.state.audioView === "Audio_Classification" && "Audio_active"
+          }`}
         >
           Classification
         </div>
         <div
           onClick={this.audiohandleClick.bind(this, "Audio_Editing")}
-          className="Audio_Editing"
+          className={`Audio_Editing ${
+            this.state.audioView === "Audio_Editing" && "Audio_active"
+          }`}
         >
           Editing
         </div>
         <div
           onClick={this.audiohandleClick.bind(this, "Audio_AudiotoText")}
-          className="Audio_AudiotoText"
+          className={`Audio_AudiotoText ${
+            this.state.audioView === "Audio_AudiotoText" && "Audio_active"
+          }`}
         >
           Audio to Text
         </div>
