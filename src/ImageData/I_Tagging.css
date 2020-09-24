@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+.I_Tagging_main {
+  position: relative;
+  margin-top: 80px;
+}
+.I_Tagging_box {
+  width: 870px;
+  overflow: hidden;
+}
+.I_Tagging_img {
+  width: 468px;
+  height: 347px;
+  float: left;
+  border-radius: 8px;
+}
+.I_Tagging_img_text {
+  float: left;
+  width: 350px;
+}
+.I_Tagging_img_text p {
+  margin-top: 13px;
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #20252a;
+  margin-bottom: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.I_Tagging_buttontext {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.I_Tagging_yes {
+  background: #7b7e85;
+  border: none;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 24px;
+  width: fit-content;
+  padding: 8px 20px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.I_Tagging_no {
+  border: 1px solid #999;
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 24px;
+  width: fit-content;
+  color: #7b7e85;
+  padding: 8px 20px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.I_Tagging_title {
+  margin-top: 40px;
+}
+.I_T_main {
+  height: 36px;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.I_T_sub {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #4f4f4f;
+}

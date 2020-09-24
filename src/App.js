@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Screen />
       <Clients />
-      <Products />
+      <Product />
       <Solutions />
       <Process />
       <Name />

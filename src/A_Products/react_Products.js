@@ -118,8 +118,6 @@ class Product extends Component {
           </div>
           <div className="products_MainView">
             <MainChange />
-            <div className="mainview_Indexes"></div>
-            <div className="mainview_View"></div>
           </div>
           <div className="products_Footer">
             <div className="p_footer_Data">

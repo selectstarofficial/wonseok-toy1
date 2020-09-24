@@ -1,0 +1,11 @@
+.Image_View {
+  position: relative;
+  float: left;
+  margin-left: 60px;
+  width: 950px;
+}
+.Image_Collection_img {
+  margin-top: 80px;
+  width: 920px;
+  height: 623px;
+}
