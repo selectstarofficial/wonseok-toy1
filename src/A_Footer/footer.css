@@ -13,10 +13,12 @@
   position: absolute;
   background-color: white;
 }
-.footer_selectstat {
+.footer_selectstart {
   position: absolute;
   width: 200px;
   height: 26.34px;
+  margin-top: -30px;
+  cursor: pointer;
 }
 .footer_top_line {
   height: 0px;
@@ -38,6 +40,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
   line-height: 16px;
   display: flex;
   align-items: center;
@@ -46,6 +49,7 @@
 .first_box_sub_text1 {
   font-style: normal;
   font-weight: normal;
+  cursor: pointer;
   margin-top: 16px;
   font-size: 14px;
   line-height: 16px;
@@ -57,6 +61,7 @@
   margin-top: 16px;
   font-style: normal;
   font-weight: normal;
+  cursor: pointer;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -65,6 +70,7 @@
 }
 .first_box_sub_text3 {
   font-style: normal;
+  cursor: pointer;
   font-weight: normal;
   margin-top: 16px;
   font-size: 14px;
@@ -77,6 +83,7 @@
 .first_box_sub_text4 {
   font-style: normal;
   font-weight: normal;
+  cursor: pointer;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -90,6 +97,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
   display: flex;
   align-items: center;
 
@@ -99,6 +107,7 @@
   position: absolute;
   display: flex;
   margin-left: 50%;
+  cursor: pointer;
   flex-direction: column;
   padding: 0;
 }
@@ -108,6 +117,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: #000000;
@@ -116,6 +126,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  cursor: pointer;
   line-height: 16px;
   margin-top: 16px;
   display: flex;
@@ -126,6 +137,7 @@
 .second_box_sub_text2 {
   font-style: normal;
   font-weight: normal;
+  cursor: pointer;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -136,6 +148,7 @@
 .second_box_sub_text3 {
   font-style: normal;
   font-weight: normal;
+  cursor: pointer;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -148,6 +161,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
   display: flex;
   margin-top: 16px;
   align-items: center;
@@ -159,6 +173,7 @@
   margin-left: 70%;
   flex-direction: column;
   padding: 0;
+  cursor: pointer;
 }
 .three_box_main_text1 {
   margin-top: -25px;
@@ -166,6 +181,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: #000000;
@@ -174,6 +190,7 @@
   margin-top: 40px;
   font-style: normal;
   font-weight: bold;
+  cursor: pointer;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -187,6 +204,7 @@
   line-height: 16px;
   display: flex;
   margin-top: 16px;
+  cursor: pointer;
   align-items: center;
   color: #000000;
 }
@@ -195,6 +213,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
   display: flex;
   margin-top: 16px;
   align-items: center;

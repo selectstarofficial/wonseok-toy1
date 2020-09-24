@@ -6,15 +6,15 @@ import product_audio from "./img/audio.png";
 import product_text from "./img/Group.png";
 import product_last from "./img/last.png";
 import product_img from "./img/secondpageback-img.png";
+import ImageData from "./ImageData";
+import VideoData from "./VideoData";
+import AudioData from "./AudioData";
+import TextData from "./TextData";
+import GetStart from "./GetStart";
 import icon1 from "./img/product_icon1.png";
 import icon2 from "./img/product_2.png";
 import icon3 from "./img/product_3.png";
 import icon4 from "./img/product4.png";
-import ImageData from "../P_ImageData/imagedata";
-import VideoData from "../P_VideoData/videodata";
-import AudioData from "../P_AudioData/AudioData";
-import TextData from "../P_TextData/TextData";
-import GetStart from "../P_GetStart/GetStart";
 class Products extends Component {
   constructor(props) {
     super(props);

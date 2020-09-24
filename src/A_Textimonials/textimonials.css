@@ -49,6 +49,7 @@
 }
 .textimonials_left_button {
   margin-top: 180px;
+  cursor: pointer;
   margin-left: -2%;
   position: absolute;
 }
@@ -56,6 +57,7 @@
   margin-top: 180px;
   margin-left: 98%;
   position: absolute;
+  cursor: pointer;
 }
 .textimonialsbutton {
   z-index: 9999;

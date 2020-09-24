@@ -53,6 +53,7 @@
   order: 0;
   align-self: center;
   margin: 44px 0px;
+  cursor: pointer;
 }
 .titlesolutions {
   margin-left: 8%;
@@ -64,6 +65,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   letter-spacing: 1px;
@@ -80,6 +82,7 @@
   top: 0px;
   font-style: normal;
   font-weight: bold;
+  cursor: pointer;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -96,6 +99,7 @@
   height: 16px;
   margin-left: 8%;
   top: 0px;
+  cursor: pointer;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -114,6 +118,7 @@
   height: 25px;
   left: 15%;
   top: 13.5px;
+  cursor: pointer;
 }
 .screenmaintext {
   position: absolute;
@@ -172,6 +177,7 @@
   color: #000000;
   flex: none;
   order: 0;
+  cursor: pointer;
 }
 
 .logobutton {

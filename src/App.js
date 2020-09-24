@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Clients from "./A_Clients/clients";
 import Screen from "./A_Screen/screen";
+import Product from "./A_Products/react_Products.js";
 import Products from "./A_Products/products";
 import Solutions from "./A_Solutions/solutions";
 import Process from "./A_Process/process";
