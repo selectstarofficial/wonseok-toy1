@@ -62,12 +62,12 @@ class Product extends Component {
                 src={product_image}
                 alt="img"
                 className={`p_img_img ${
-                  this.state.mainView === "ImageData" && "m_img_active"
+                  this.state.mainView === "ImageData" && "opacity1"
                 }`}
               />
               <p
                 className={`p_image_text ${
-                  this.state.mainView === "ImageData" && "m_text_active"
+                  this.state.mainView === "ImageData" && "colorblack"
                 }`}
               >
                 Image Data
@@ -75,18 +75,22 @@ class Product extends Component {
             </div>
             <div
               onClick={this.handleClick.bind(this, "VideoData")}
-              className={`p_VideoData ${
-                this.state.mainView === "VideoData" && "m_text_active"
-              }`}
+              className="p_VideoData"
             >
               <img
                 src={product_video}
                 alt="img"
                 className={`p_video_img ${
-                  this.state.mainView === "VideoData" && "m_img_active"
+                  this.state.mainView === "VideoData" && "opacity1"
                 }`}
               />
-              <p>Video Data</p>
+              <p
+                className={`p_video_text ${
+                  this.state.mainView === "VideoData" && "colorblack"
+                }`}
+              >
+                Video Data
+              </p>
             </div>
             <div
               onClick={this.handleClick.bind(this, "AudioData")}
@@ -96,24 +100,54 @@ class Product extends Component {
                 src={product_audio}
                 alt="img"
                 className={`p_audio_img ${
-                  this.state.mainView === "AudioData" && "Main_img_active"
+                  this.state.mainView === "AudioData" && "opacity1"
                 }`}
               />
-              <p>Audio Data</p>
+              <p
+                className={`p_audio_text ${
+                  this.state.mainView === "AudioData" && "colorblack"
+                }`}
+              >
+                Audio Data
+              </p>
             </div>
             <div
               className="p_TextData"
               onClick={this.handleClick.bind(this, "TextData")}
             >
-              <img src={product_text} alt="img" className="p_text_img" />
-              <p>Text/Document Data</p>
+              <img
+                src={product_text}
+                alt="img"
+                className={`p_text_img ${
+                  this.state.mainView === "TextData" && "opacity1"
+                }`}
+              />
+              <p
+                className={`p_text_text ${
+                  this.state.mainView === "TextData" && "colorblack"
+                }`}
+              >
+                Text/Document Data
+              </p>
             </div>
             <div
               className="p_GetStart"
               onClick={this.handleClick.bind(this, "GetStart")}
             >
-              <img src={product_last} alt="img" className="p_start_img" />
-              <p>anything You Want</p>
+              <img
+                src={product_last}
+                alt="img"
+                className={`p_start_img ${
+                  this.state.mainView === "GetStart" && "opacity1"
+                }`}
+              />
+              <p
+                className={`p_getstart_text ${
+                  this.state.mainView === "GetStart" && "colorblack"
+                }`}
+              >
+                anything You Want
+              </p>
             </div>
           </div>
           <div className="products_MainView">

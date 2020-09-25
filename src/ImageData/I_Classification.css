@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
 .I_Tagging_main {
   position: relative;
   margin-top: 80px;
@@ -24,7 +23,6 @@
   line-height: 20px;
   color: #20252a;
   margin-bottom: 0;
-  font-family: "Noto Sans KR", sans-serif;
 }
 .I_Tagging_buttontext {
   margin-top: 20px;

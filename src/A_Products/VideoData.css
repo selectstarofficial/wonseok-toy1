@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+.Video_Indexes {
+  margin-top: 80px;
+  margin-left: 40px;
+  float: left;
+}
+
+.Video_Indexes div {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 24px;
+  width: fit-content;
+  cursor: pointer;
+}
+.Video_Collection {
+  color: #7b7e85;
+}
+.Video_Tagging {
+  color: #7b7e85;
+}
+.Video_Classification {
+  color: #7b7e85;
+}
+.Video_BoundingBox {
+  color: #7b7e85;
+}
+.Video_Polygon {
+  color: #7b7e85;
+}
+.I_active {
+  color: white;
+  background: #2b8bf4;
+  border-radius: 40px;
+}

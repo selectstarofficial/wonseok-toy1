@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./I_Tagging.css";
 import I_Tagging_img from "./img/image-tagging1.e49b4350.png";
 
-class I_Tagging extends Component {
+class I_TAGGING extends Component {
   render() {
     return (
       <div className="I_Tagging_main">
@@ -34,4 +34,4 @@ class I_Tagging extends Component {
     );
   }
 }
-export default I_Tagging;
+export default I_TAGGING;

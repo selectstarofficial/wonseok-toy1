@@ -137,11 +137,11 @@ p {
   width: 36px;
   height: 40px;
 }
-.m_img_active {
-  opacity: 1;
+.opacity1 {
+  opacity: 1 !important;
 }
-.m_text_active {
-  color: black;
+.colorblack {
+  color: black !important;
 }
 .products_Footer {
   margin-top: 40px;

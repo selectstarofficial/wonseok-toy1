@@ -1,0 +1,32 @@
+.I_Bounding_cover {
+  position: relative;
+  margin-top: 80px;
+}
+.I_Bounding_box {
+  width: 870px;
+  overflow: hidden;
+}
+.I_Bounding_img {
+  width: 880px;
+  height: 514px;
+
+  float: left;
+  border-radius: 8px;
+}
+.I_Bounding_title {
+  margin-top: 40px;
+}
+.I_Bounding_title .main {
+  height: 36px;
+
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000;
+}
+.I_Bounding_title .sub {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+}

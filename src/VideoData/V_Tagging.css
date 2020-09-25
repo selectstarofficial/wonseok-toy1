@@ -15,15 +15,15 @@
 .I_Tagging_img_text {
   float: left;
   width: 350px;
+  margin-left: 20px;
 }
 .I_Tagging_img_text p {
-  margin-top: 13px;
-  margin-left: 16px;
-  font-weight: 300;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
+  width: 301px;
+  font-weight: 700;
   color: #20252a;
-  margin-bottom: 0;
 }
 .I_Tagging_buttontext {
   margin-top: 20px;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./I_Bounding.css";
 import I_Bounding_img from "./img/image-boundingbox1.9952ebd1.png";
 
-class I_Bounding extends Component {
+class I_BOUNDING extends Component {
   render() {
     return (
       <div className="I_Bounding_cover">
@@ -20,4 +20,4 @@ class I_Bounding extends Component {
     );
   }
 }
-export default I_Bounding;
+export default I_BOUNDING;

@@ -1,0 +1,25 @@
+.I_I-to-T_cover {
+  margin-top: 80px;
+}
+.I_I-to-T_cover video {
+  float: left;
+  width: 290px;
+  height: 624px;
+  margin-right: 40px;
+}
+.I_I-to-T_title {
+  margin-top: 40px;
+}
+.I_I-to-T_title main {
+  height: 36px;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.I_I-to-T_title sub {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+}

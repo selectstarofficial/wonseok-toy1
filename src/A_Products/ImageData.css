@@ -4,6 +4,7 @@
   margin-left: 40px;
   float: left;
 }
+
 .Image_Indexes div {
   padding-right: 20px;
   padding-left: 20px;
@@ -13,8 +14,46 @@
   height: 40px;
   text-align: center;
   font-family: "Noto Sans KR", sans-serif;
-  color: #7b7e85;
+
   margin-bottom: 24px;
   width: fit-content;
   cursor: pointer;
+}
+.Image_Collection {
+  color: #7b7e85;
+}
+.Image_Tagging {
+  color: #7b7e85;
+}
+.Image_Classification {
+  color: #7b7e85;
+}
+.Image_BoundingBox {
+  color: #7b7e85;
+}
+.Image_Polyline {
+  color: #7b7e85;
+}
+.Image_Polygon {
+  color: #7b7e85;
+}
+.Image_Segmentation {
+  color: #7b7e85;
+}
+.Image_Keypoint {
+  color: #7b7e85;
+}
+.Image_Brush {
+  color: #7b7e85;
+}
+.Image_OCR {
+  color: #7b7e85;
+}
+.Image_ImagetoText {
+  color: #7b7e85;
+}
+.I_active {
+  color: white;
+  background: #2b8bf4;
+  border-radius: 40px;
 }
