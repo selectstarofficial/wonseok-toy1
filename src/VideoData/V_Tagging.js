@@ -8,11 +8,18 @@ class V_TAGGING extends Component {
       <div className="I_Tagging_main">
         <div className="I_Tagging_box">
           <img src={V_Tagging_img} alt="img" className="I_Tagging_img"></img>
-          <div className="I_Tagging_img_text">
+          <div className="V_Tagging_img_text">
             <p>
               Q. Summarize the following conversation <br />
               in the video under three sentences.
             </p>
+            <div className="I_Tagging_sub_text">
+              Two women are talking about the dinner
+              <br /> menu tonight. The woman on the left
+              <br /> wants pasta and the woman on the right
+              <br />
+              wants sushi. <span className="blue">|</span>
+            </div>
           </div>
         </div>
         <div className="I_Tagging_title">

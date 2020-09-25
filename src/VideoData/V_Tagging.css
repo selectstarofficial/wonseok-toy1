@@ -12,12 +12,12 @@
   float: left;
   border-radius: 8px;
 }
-.I_Tagging_img_text {
+.V_Tagging_img_text {
   float: left;
   width: 350px;
   margin-left: 20px;
 }
-.I_Tagging_img_text p {
+.V_Tagging_img_text p {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
@@ -77,4 +77,16 @@
   line-height: 20px;
   color: #4f4f4f;
   font-weight: lighter;
+}
+.I_Tagging_sub_text {
+  border: 1px solid #1e76ec;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px;
+  width: 302px;
+  height: 130px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+  color: #34373b;
 }
