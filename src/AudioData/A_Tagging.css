@@ -1,0 +1,72 @@
+.A_Tagging_cover {
+  position: relative;
+  margin-top: 80px;
+}
+.A_Tagging_box {
+  width: 100%;
+  overflow: hidden;
+}
+.A_Tagging_box .main {
+  font-size: 20px;
+  line-height: 28px;
+  width: 100%;
+  color: #20252a;
+}
+.A_Tagging_box img {
+  float: left;
+}
+.A_Tagging_button {
+  float: left;
+  width: 400px;
+  margin-left: 30px;
+}
+.A_Tagging_no {
+  border: 1px solid #999;
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  width: fit-content;
+  color: #7b7e85;
+  padding: 8px 20px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.A_Tagging_yes {
+  background: #7b7e85;
+  border: none;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  width: fit-content;
+  padding: 8px 20px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.A_Tagging_text {
+  margin-top: 40px;
+}
+.A_Tagging_text .main {
+  height: 36px;
+  margin: 0;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.A_Tagging_text .sub {
+  margin-top: 16px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+}

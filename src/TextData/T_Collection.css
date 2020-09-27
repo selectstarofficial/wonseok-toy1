@@ -1,0 +1,32 @@
+.T_Collection_cover {
+  margin-top: 40px;
+}
+.T_Collection_cover video {
+  float: left;
+  width: 290px;
+  height: 624px;
+}
+.T_Collection_cover img {
+  float: left;
+  margin-left: 20px;
+  width: 300px;
+}
+.T_Collection_text {
+  float: left;
+  margin-left: 20px;
+  width: 300px;
+}
+.T_Collection_text .main {
+  height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  color: #000;
+  margin: 0;
+}
+.T_Collection_text .sub {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 16px;
+  color: #4f4f4f;
+}

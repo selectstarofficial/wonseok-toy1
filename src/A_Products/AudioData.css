@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+.Audio_Indexes {
+  margin-top: 80px;
+  margin-left: 40px;
+  float: left;
+}
+
+.Audio_Indexes div {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 24px;
+  width: fit-content;
+  cursor: pointer;
+}
+.Audio_Collection {
+  color: #7b7e85;
+}
+.Audio_Tagging {
+  color: #7b7e85;
+}
+.Audio_Classification {
+  color: #7b7e85;
+}
+.Audio_Editing {
+  color: #7b7e85;
+}
+.Audio_AudiotoText {
+  color: #7b7e85;
+}
+.I_active {
+  color: white;
+  background: #2b8bf4;
+  border-radius: 40px;
+}
