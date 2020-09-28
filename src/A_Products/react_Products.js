@@ -46,7 +46,7 @@ class Product extends Component {
     };
     return (
       <div className="products_main_page">
-        <div className="products_cover_page">
+        <div className="products_covr_page">
           <p className="products_small_header">PRODUCTS</p>
           <p className="products_big_header">
             <span className="blue">QUICK & ACCURATE</span>
@@ -154,7 +154,7 @@ class Product extends Component {
             <MainChange />
           </div>
           <div className="products_Footer">
-            <div className="p_footer_Data">
+            <div className="P_Footer">
               <img src={icon1} alt="img" />
               <p className="Data_main">
                 Data location, time, <br />
@@ -171,7 +171,7 @@ class Product extends Component {
                 </span>
               </p>
             </div>
-            <div className="p_footer_Quality">
+            <div className="P_Footer">
               <img src={icon2} alt="img" />
               <p className="Quality_main">
                 Quality, size,
@@ -189,7 +189,7 @@ class Product extends Component {
                 We deliver any requests.
               </p>
             </div>
-            <div className="p_footer_Privacy">
+            <div className="P_Footer">
               <img src={icon3} alt="img" />
               <p className="Privacy_main">Privacy</p>
               <p className="Privacy_sub">
@@ -201,7 +201,7 @@ class Product extends Component {
                 data is anonymous.
               </p>
             </div>
-            <div className="p_footer_AI">
+            <div className="P_Footer">
               <img src={icon4} alt="img" />
               <p className="AI_main">AI Inspection</p>
               <p className="AI_sub">

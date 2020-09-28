@@ -1,0 +1,100 @@
+.LG_box {
+  width: 710px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  float: right;
+  right: 0;
+}
+.LG_text {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.LG_text .main {
+  font-size: 18px;
+  line-height: 28px;
+  color: #7b7e85;
+  margin-left: 165px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  width: 480px;
+}
+.LG_text .sub {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #7b7e85;
+  margin-left: 165px;
+}
+.LG_Trapezoid_color {
+  background: rgb(242, 68, 58);
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  transform: skewX(-10deg) translateX(-246px);
+  overflow: hidden;
+}
+.LG_Trapezoid {
+  width: 390px;
+  height: 400px;
+  z-index: 5000;
+  position: absolute;
+}
+.LG_Trapezoid img {
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 168px;
+  left: 90px;
+  transition: 0.5s;
+}
+.LOTTE_Trapezoid_color {
+  background: rgb(212, 70, 128);
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  transform: skewX(-10deg) translateX(-246px);
+  overflow: hidden;
+}
+.Cognitive_Trapezoid_color {
+  background: rgb(101, 229, 255);
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  transform: skewX(-10deg) translateX(-246px);
+  overflow: hidden;
+}
+.OMNIOUS_Trapezoid_color {
+  background: rgb(255, 206, 39);
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  transform: skewX(-10deg) translateX(-246px);
+  overflow: hidden;
+}
+.WideBrain_Trapezoid_color {
+  background: rgb(73, 42, 169);
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  transform: skewX(-10deg) translateX(-246px);
+  overflow: hidden;
+}

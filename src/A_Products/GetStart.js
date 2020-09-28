@@ -20,7 +20,7 @@ class GetStart extends Component {
             <br />- Small in-house generated data for Inspector qualification is
             needed. Project launch is fast and cheap
           </p>
-          <div className="G_button"> Get Start</div>
+          <div className="G_button"> GET STARTED</div>
         </div>
         <img src={GetStart_img} alt="img"></img>
       </div>
