@@ -41,7 +41,7 @@ function Textimonials() {
   return (
     <div className="Textimonials_cover">
       <div className="Textimonials_box">
-        <p className="Textimonials_title">TEXTIMONIAL</p>
+        <p className="Textimonials_title">TESTIMONIAL</p>
         <div onClick={leftClick} className="leftside">
           <img src={Leftside} alt="img"></img>
         </div>
