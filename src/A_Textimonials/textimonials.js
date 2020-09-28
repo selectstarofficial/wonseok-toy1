@@ -1,47 +1,58 @@
 import React, { Component } from "react";
 import "./textimonials.css";
-import textimonials1 from "./img/testimonialsimg1.png";
-import { AiOutlineArrowLeft } from "react-icons/ai";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import Leftside from "./img/leftside.png";
+import Rightside from "./img/rightside.png";
+import LG_CNS from "../Textimonials/LG_CNS";
+import LOTTE from "../Textimonials/LOTTE";
+import OMNIOUS from "../Textimonials/OMNIOUS";
+import COGNITIVE from "../Textimonials/Cognitive";
+import WIDEBRAIN from "../Textimonials/WideBrain";
 
 class Textimonials extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      videoView: "LG_CNS",
+    };
+  }
+  chagehandleClick = (view) => {
+    this.setState({
+      videoView: view,
+    });
+  };
   render() {
+    const TextimonialsChange = () => {
+      switch (this.state.videoView) {
+        case "LG_CNS":
+          return <LG_CNS />;
+        case "LOTTE":
+          return <LOTTE />;
+        case "OMNIOUS":
+          return <OMNIOUS />;
+        case "Cognitive":
+          return <COGNITIVE />;
+        case "WideBrain":
+          return <WIDEBRAIN />;
+        default:
+          return <LG_CNS />;
+      }
+    };
     return (
-      <div className="textimonials_cover_page">
-        <div className="textimonials_little_text">TEXTIMONIALS</div>
-        <div className="textimonials_main_box">
-          <div className="textimonials_left_button">
-            <button className="textimonialsbutton">
-              <AiOutlineArrowRight />
-            </button>
+      <div className="Textimonials_cover">
+        <div className="Textimonials_box">
+          <p className="Textimonials_title">TEXTIMONIAL</p>
+          <div className="leftside">
+            <img src={Leftside} alt="img"></img>
           </div>
-          <div className="textimonials_right_button">
-            <button className="textimonialsbutton">
-              <AiOutlineArrowLeft />
-            </button>
+          <div className="rightside">
+            <img src={Rightside} alt="img"></img>
           </div>
-          <div className="textimonials_main_rectangle">
-            <div className="textimonials_main_img">
-              <img src={textimonials1} alt="img"></img>
-            </div>
-          </div>
-          <div className="textimonials_main_text">
-            “With Selectstar, we were able to efficiently collect
-            <br />
-            KorQuad 2.0, a Question-Answer dataset in Korean. We <br />
-            loved the quality and diversity of data, collected from
-            <br /> broad workers. Especially, Selectstar`s user guideline for
-            <br /> our task was very Impressive, capturing our
-            <br />
-            expectations into clear explanations for the workers.”
-            <div className="textimonials_sub_text">
-              AI & Big Data Research Center
-            </div>
+          <div className="Textimonials_change">
+            <TextimonialsChange />
           </div>
         </div>
       </div>
     );
   }
 }
-
 export default Textimonials;
