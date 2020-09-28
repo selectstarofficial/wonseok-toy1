@@ -14,7 +14,7 @@ function Textimonials() {
   useEffect(() => {
     setInterval(rightClick, 5000);
     console.log(MainViewlist);
-    clearInterval(rightClick, 1000);
+    clearInterval(rightClick, 3000);
   });
 
   const leftClick = () => {
