@@ -10,25 +10,25 @@ import clinet_NIA from "./img/nia.png";
 class Clients extends Component {
   render() {
     return (
-      <div className="cover">
-        <div className="clients">
-          <div className="LG">
-            <img src={client_LG} alt="img"></img>
+      <div className="Clients_cover">
+        <div className="Clients_main_page">
+          <div className="Client">
+            <img src={client_LG} alt="LG"></img>
           </div>
-          <div className="NAVER">
-            <img src={clinet_NAVER} alt="img"></img>
+          <div className="Client">
+            <img src={clinet_NAVER} alt="NAVER"></img>
           </div>
-          <div className="LOTTE">
-            <img src={clinet_LOTTE} alt="img"></img>
+          <div className="Client">
+            <img src={clinet_LOTTE} alt="LOTTE"></img>
           </div>
-          <div className="SK">
-            <img src={clinet_SK} alt="img"></img>
+          <div className="Client">
+            <img src={clinet_SK} alt="SK"></img>
           </div>
-          <div className="KAIST">
-            <img src={clinet_KAIST} alt="img"></img>
+          <div className="Client">
+            <img src={clinet_KAIST} alt="KAIST"></img>
           </div>
-          <div className="NIA">
-            <img src={clinet_NIA} alt="img"></img>
+          <div className="Client">
+            <img src={clinet_NIA} alt="NIA"></img>
           </div>
         </div>
       </div>

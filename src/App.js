@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Header from "./A_Header/A_Header";
 import Clients from "./A_Clients/clients";
 import Screen from "./A_Screen/screen";
 import Product from "./A_Products/react_Products.js";
@@ -15,6 +16,7 @@ import Footer from "./A_Footer/footer";
 function App() {
   return (
     <div className="App">
+      <Header />
       <Screen />
       <Clients />
       <Product />

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+.Header_cover {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 10000;
+}
+.Header_main_page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1060px;
+  transform: translate(-50%, -50%);
+}
+.Header_main_page img {
+  position: relative;
+  left: 0;
+  cursor: pointer;
+}
+.Header_text_list {
+  position: relative;
+  float: right;
+}
+.Header_text {
+  font-family: "Noto Sans", sans-serif;
+  float: left;
+  margin-left: 22px;
+  margin-right: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
