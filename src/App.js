@@ -6,7 +6,7 @@ import Screen from "./A_Screen/screen";
 import Product from "./A_Products/react_Products.js";
 import Solutions from "./A_Solutions/solutions";
 import Process from "./A_Process/process";
-import Name from "./A_Name/name";
+import Company from "./A_Company/Company";
 import Cashmission from "./A_Cashmission/cashmission";
 import Textimonials from "./A_Textimonials/textimonials";
 import Allclinets from "./A_AllClients/allclients";
@@ -22,7 +22,7 @@ function App() {
       <Product />
       <Solutions />
       <Process />
-      <Name />
+      <Company />
       <Cashmission />
       <Textimonials />
       <Allclinets />
