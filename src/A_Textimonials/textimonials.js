@@ -12,10 +12,9 @@ function Textimonials() {
   const [MainViewlist, setMainViewlist] = useState(0);
 
   useEffect(() => {
-    setInterval(rightClick, 1000);
-    console.log(MainViewlist);
-    clearInterval(setInterval, 4000);
-  }, [MainViewlist]);
+    const timer = setTimeout(rightClick, 3000);
+    return () => clearTimeout(timer);
+  });
 
   const leftClick = () => {
     setMainViewlist(MainViewlist <= 0 ? 4 : MainViewlist - 1);
