@@ -1,48 +1,47 @@
-import React, { Component } from "react";
-import processimg from "./img/processimg.png";
+import React from "react";
+import Process_img_1 from "./img/processimg.png";
+import Process_img_2 from "./img/solution2-bg.a9e12d1a.png";
 import "./process.css";
 
-class Process extends Component {
-  render() {
-    return (
-      <div className="process_cover_page">
-        <div className="process_text_box">
-          <div className="process_little_text">
-            HOW IT WORKS
-            <div className="process_main_text">
-              AI DATA CROWEDSOURCING
-              <div className="process_mid_text1">
-                Advance <span>Crowedsourcing Technology </span>based
-                <br />
-                on mathematical algorithms
-                <div className="process_sub_text1">
-                  To create scalable & robust crowdsourcing platform, we <br />
-                  developed the unique data quality control system using the
-                  <br />
-                  cutting-edge mathematical algorithms.
-                </div>
-              </div>
-              {
-                <div className="process_mid_text2">
-                  AI assisted <span>Data Collection/Annotation</span>
-                  <div className="process_sub_text2">
-                    Our AI assisted data collection & annotation is efficient
-                    and
-                    <br /> effective. We provide easier annotation environment
-                    and we
-                    <br /> prevent the submission of useless ‘similar data’.
-                  </div>
-                </div>
-              }
-            </div>
+const Process = () => {
+  return (
+    <div className="Process_cover">
+      <div className="Process_main">
+        <p className="main-title">HOW IT WORKS</p>
+        <p className="main-sub">AI DATA CROWDSOURCING</p>
+        <div className="Process_box">
+          <div className="Process_box_text">
+            <p className="box-title">
+              Advanced <span className="blue">Crowdsourcing Technology</span>{" "}
+              based
+              <br />
+              on mathematical algorithms
+            </p>
+            <p className="box-sub">
+              To create scalable & robust crowdsourcing platform, we <br />
+              developed the unique data quality control system using the <br />
+              cutting-edge mathematical algorithms.
+            </p>
           </div>
-        </div>
-        <div className="process_img">
-          <img src={processimg} alt="img"></img>
+          <div className="Process_box_text">
+            <p className="box-title">
+              AI assisted{" "}
+              <span className="blue">Data Collection / Annotation</span>
+            </p>
+            <p className="box-sub">
+              Our AI assisted data collection & annotation is efficient and
+              <br />
+              effective. We provide easier annotation environment and we
+              <br />
+              prevent the submission of useless 'similar data'.
+            </p>
+          </div>
+          <img src={Process_img_1} alt="How it Works" />
         </div>
       </div>
-    );
-  }
-}
+      <img src={Process_img_2} alt="X" className="process_x" />
+    </div>
+  );
+};
 
 export default Process;

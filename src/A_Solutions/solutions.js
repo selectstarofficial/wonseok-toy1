@@ -24,7 +24,7 @@ const Solution = () => {
           <p className="Sub">
             Our special guidance team maintains the data quality with the best
             user-centric <br />
-            guidelines for the crowd-workers.{" "}
+            guidelines for the crowd-workers{" "}
           </p>
         </div>
         <div className="Solution_container">
