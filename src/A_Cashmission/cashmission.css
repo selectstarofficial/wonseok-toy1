@@ -1,71 +1,69 @@
-.cashmission_cover_page {
+.Cashmission_cover {
+  position: relative;
   width: 100%;
-  height: 1345px;
+  height: 1390px;
   background: #f6f9fc;
+  overflow: hidden;
 }
-.cashmission_main_view {
+.Cashmission_main {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 1200px;
-  height: 1344px;
+  height: 1390px;
 }
-.top_box_little_text {
-  margin-left: 15%;
+.Cashmission_box1 .main {
+  margin-left: 40px;
   margin-top: 120px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
+  margin-bottom: 16px;
+  font-weight: 700;
   color: #1e76ec;
-  width: 306px;
-  height: 24px;
 }
-.top_box_main_text {
-  margin-top: 8px;
-  width: 474px;
-  height: 280px;
-  font-style: normal;
-  font-weight: bold;
+.Cashmission_box1 .title {
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 900;
   font-size: 64px;
-  line-height: 72px;
-  letter-spacing: -1px;
-  color: #000000;
+  line-height: 80px;
+  width: 450px;
 }
-.top_box_sub_text {
-  margin-top: 40px;
-  font-style: normal;
-  font-weight: normal;
+.Cashmission_box1 .sub {
   font-size: 18px;
   line-height: 28px;
+  margin-left: 40px;
   width: 494px;
-  height: 110px;
   color: #7b7e85;
 }
-.top_box_main_img {
-  margin-left: 58%;
+.Cashmission_box2 {
   position: absolute;
+  top: 730px;
+  left: 614px;
 }
-.bottom_box_main_img {
-  margin-top: 600px;
-  margin-left: 13%;
-  position: absolute;
-}
-.bottom_box_main_text {
-  font-style: normal;
-  font-weight: bold;
+.Cashmission_box2 .title {
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 900;
   font-size: 64px;
-  line-height: 72px;
-  letter-spacing: -1px;
-  color: #000000;
-  margin-left: 60%;
-  position: absolute;
-  margin-top: 600px;
+  line-height: 80px;
+  width: 550px;
 }
-.bottom_box_sub_text {
-  width: 533px;
-  height: 218px;
-  font-style: normal;
-  font-weight: normal;
+.Cashmission_box2 .sub {
   font-size: 18px;
   line-height: 28px;
+  margin-left: 40px;
+  width: 494px;
   color: #7b7e85;
+}
+.Cashmission_cover .img1 {
+  position: absolute;
+  top: 120px;
+  left: 614px;
+}
+.Cashmission_cover .img2 {
+  position: absolute;
+  left: 40px;
+  top: 730px;
 }

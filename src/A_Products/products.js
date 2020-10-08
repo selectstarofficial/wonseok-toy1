@@ -44,7 +44,7 @@ class Products extends Component {
       }
     };
     return (
-      <div className="coverpage">
+      <div id="Products" className="coverpage">
         <div className="coverstair">
           <p className="product">PRODUCTS</p>
 

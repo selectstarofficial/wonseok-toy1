@@ -96,3 +96,6 @@
   align-items: center;
   cursor: pointer;
 }
+.cc_button2 a {
+  color: #ffffff !important;
+}

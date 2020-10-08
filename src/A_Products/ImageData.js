@@ -54,7 +54,7 @@ class ImageData extends Component {
     };
     return (
       <>
-        <div className="Image_Indexes">
+        <div id="ImageData" className="Image_Indexes">
           <div
             onClick={this.ImagehandleClick.bind(this, "I_Collection")}
             className={`Image_Collection ${

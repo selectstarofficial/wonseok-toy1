@@ -3,7 +3,7 @@ import "./screen.css";
 
 const Screen = () => {
   return (
-    <div className="Screen_cover">
+    <div id="Screen" className="Screen_cover">
       <div className="Screen_main_page">
         <p className="title">
           THE FINEST

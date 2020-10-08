@@ -5,7 +5,7 @@ import "./process.css";
 
 const Process = () => {
   return (
-    <div className="Process_cover">
+    <div id="HowItWorks" className="Process_cover">
       <div className="Process_main">
         <p className="main-title">HOW IT WORKS</p>
         <p className="main-sub">AI DATA CROWDSOURCING</p>

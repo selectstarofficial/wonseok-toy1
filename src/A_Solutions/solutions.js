@@ -1,16 +1,18 @@
 import React from "react";
 import "./solution.css";
-import solution_aiimg from "./img/solution_image1.c55d8896.jpg";
-import solution_user from "./img/solution_image2.2303e6bb.jpg";
-import solution_quality from "./img/solution_image3.8ebe61bf.jpg";
-import solution_mobile from "./img/solution_image4.cc2d8dfb.jpg";
+import solution_aiimg from "./video/solution_video1_en.9bc23f52.mp4";
+import solution_user from "./video/solution_video2_en.7f9fb95b.mp4";
+import solution_quality from "./video/solution_video3_en.0625a40d.mp4";
+import solution_mobile from "./video/solution_video4_en.c721bad0.mp4";
 
 const Solution = () => {
   return (
-    <div className="Solution_cover">
+    <div id="Solution" className="Solution_cover">
       <div className="Solution_main_page">
         <div className="Solution_container">
-          <img src={solution_aiimg} alt="AI" />
+          <div className="Soultion_video">
+            <video controls autoPlay loop muted src={solution_aiimg} />
+          </div>
           <p className="Title">AI assisted Data Collection/Annotation</p>
           <p className="Sub">
             Our designated AI team discovers the most effective and cutting-edge
@@ -19,7 +21,9 @@ const Solution = () => {
           </p>
         </div>
         <div className="Solution_container">
-          <img src={solution_user} alt="User" />
+          <div className="Soultion_video">
+            <video controls autoPlay loop muted src={solution_user} />
+          </div>
           <p className="Title">Usr-Centered Task Guidelines</p>
           <p className="Sub">
             Our special guidance team maintains the data quality with the best
@@ -28,7 +32,9 @@ const Solution = () => {
           </p>
         </div>
         <div className="Solution_container">
-          <img src={solution_quality} alt="Quality" />
+          <div className="Soultion_video">
+            <video controls autoPlay loop muted src={solution_quality} />
+          </div>
           <p className="Title">Quality-Assuring Crowdsourcing AIgorithms</p>
           <p className="Sub">
             Our designated corwdsourcing team develops mathematical models to
@@ -37,7 +43,9 @@ const Solution = () => {
           </p>
         </div>
         <div className="Solution_container">
-          <img src={solution_mobile} alt="Mobile" />
+          <div className="Soultion_video">
+            <video controls autoPlay loop muted src={solution_mobile} />
+          </div>
           <p className="Title">Mobile Crowdsourcing to the World</p>
           <p className="Sub">
             Our ubiquitous mobile crowdsourcing platform guarantees fast,

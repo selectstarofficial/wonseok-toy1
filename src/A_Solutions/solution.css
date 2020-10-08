@@ -24,11 +24,17 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-.Solution_container img {
+.Soultion_video {
   width: 900px;
   height: 540px;
   border: 10px solid #fff;
   border-radius: 8px;
+  overflow: hidden;
+}
+.Soultion_video video {
+  width: 900px;
+  height: 540px;
+  object-fit: fill;
 }
 .Solution_container .Title {
   font-size: 34px;

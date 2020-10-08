@@ -1,46 +1,101 @@
 import React, { Component } from "react";
 import "./footer.css";
 import footer from "./img/footer_img.png";
-import footer2 from "./img/footerbottom2.png";
+import { HashLink } from "react-router-hash-link";
 
-class Footer extends Component {
-  render() {
-    return (
-      <div className="footer_cover_page">
-        <div className="footer_top_line"></div>
-        <div className="footer_main_view">
-          <div className="footer_selectstart">
-            <img src={footer} alt="img"></img>
+const Footer = (props) => {
+  return (
+    <div className="Footer_cover">
+      <div className="footer_first_line"></div>
+      <div className="footer_second_line">
+        <div className="footer_seconde_line_text">© SelectStar</div>
+      </div>
+      <div className="footer_main">
+        <HashLink smooth to="#Screen">
+          <img src={footer} alt="img" />
+        </HashLink>
+        <div className="footer_main_list">
+          <div className="footer_block">
+            <div className="footer_li">
+              <HashLink smooth to="#Products">
+                <p className="li-title">PRODUCTS</p>
+              </HashLink>
+              <HashLink smooth to="#Products">
+                <p className="li-sub">Image Data</p>
+              </HashLink>
+              <HashLink smooth to="#VideoData">
+                <p
+                  className="li-sub"
+                  onClick={this.handleClick.bind(this, "VideoData")}
+                >
+                  Video Data
+                </p>
+              </HashLink>
+              <HashLink smooth to="#AudioData">
+                <p
+                  className="li-sub"
+                  onClick={this.handleClick.bind(this, "AudioData")}
+                >
+                  Audio Data
+                </p>
+              </HashLink>
+              <HashLink smooth to="#TextData">
+                <p
+                  className="li-sub"
+                  onClick={this.handleClick.bind(this, "TextData")}
+                >
+                  Text Data
+                </p>
+              </HashLink>
+            </div>
+            <div className="footer_li">
+              <HashLink smooth to="#HowItWorks">
+                <p className="li-title">HOW IT WORKS</p>
+              </HashLink>
+            </div>
           </div>
-          <div className="footer_first_box">
-            <div className="first_box_main_text1">PRODUCTS </div>
-            <div className="first_box_sub_text1">Image Data</div>
-            <div className="first_box_sub_text2">Video Data</div>
-            <div className="first_box_sub_text3">Audio Data</div>
-            <div className="first_box_sub_text4">Text Data</div>
-            <div className="first_box_main_text2">HOW IT WORKS</div>
+          <div className="footer_block">
+            <div className="footer_li">
+              <HashLink smooth to="#company">
+                <p className="li-title">COMPANY</p>
+              </HashLink>
+              <HashLink smooth to="#clients">
+                <p className="li-sub">Clients</p>
+              </HashLink>
+              <HashLink smooth to="#Cashmission">
+                <p className="li-sub">Cashmission</p>
+              </HashLink>
+              <a
+                href="https://www.notion.so/2387860beacf47048f74e0863550697a"
+                target="_blank"
+              >
+                <p className="li-sub">Careers</p>
+              </a>
+              <a href="https://medium.com/@selectstar.ai" target="_blank">
+                <p className="li-sub">Blog</p>
+              </a>
+            </div>
           </div>
-          <div className="footer_second_box">
-            <div className="second_box_main_text1">COMPANY </div>
-            <div className="second_box_sub_text1">Clients</div>
-            <div className="second_box_sub_text2">Cashmission</div>
-            <div className="second_box_sub_text3">Careers</div>
-            <div className="second_box_sub_text4">Blog</div>
-          </div>
-          <div className="footer_three_box">
-            <div className="three_box_main_text1">COMPANY </div>
-            <div className="three_box_main_text2">FIND US</div>
-            <div className="three_box_sub_text1">Facebook</div>
-            <div className="three_box_sub_text2">linkedin</div>
-          </div>
-        </div>
-        <div className="footer_bottom_line">
-          <div className="footer_bottom_img">
-            <img src={footer2} alt="img"></img>
+          <div className="footer_block">
+            <div className="footer_li">
+              <p className="li-title">CONTACT</p>
+            </div>
+            <div className="footer_li">
+              <p className="li-title">FIND US</p>
+              <a href="https://www.facebook.com/SelectStar.inc" target="_blank">
+                <p className="li-sub">FACEBOOK</p>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/selectstar-inc"
+                target="_blank"
+              >
+                <p className="li-sub">linkedin</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 export default Footer;

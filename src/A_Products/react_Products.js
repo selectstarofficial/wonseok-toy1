@@ -45,13 +45,15 @@ class Product extends Component {
       }
     };
     return (
-      <div className="products_main_page">
+      <div id="Products" className="products_main_page">
         <div className="products_covr_page">
           <p className="products_small_header">PRODUCTS</p>
           <p className="products_big_header">
             <span className="blue">QUICK & ACCURATE</span>
             <br />
-            DATA COLLECTION / ANNOTATION
+            DATA COLLECTION AND
+            <br />
+            ANNOTATION
           </p>
           <div className="products_Dataes">
             <div

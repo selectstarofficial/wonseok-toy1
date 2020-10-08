@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-.App {
-  position: relative;
-  width: 100%;
-  height: 11281px;
-}
+
 body {
   margin: 0;
   width: 100%;
-  height: 11281px;
   font-family: "Noto Sans", sans-serif;
 }
 html {
   width: 100%;
-  height: 11281px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }

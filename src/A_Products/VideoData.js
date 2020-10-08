@@ -37,7 +37,7 @@ class VideoData extends Component {
     };
     return (
       <>
-        <div className="Video_Indexes">
+        <div id="VideoData" className="Video_Indexes">
           <div
             onClick={this.VideohandleClick.bind(this, "V_Collection")}
             className={`Video_Collection ${

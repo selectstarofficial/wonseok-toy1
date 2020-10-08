@@ -1,10 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+import RouterWrapper from "./router-wrapper";
+
+ReactDOM.render(<RouterWrapper />, document.getElementById("root"));

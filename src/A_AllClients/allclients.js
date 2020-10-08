@@ -11,7 +11,7 @@ import allclient_seven from "./img/allclient_seven.png";
 class Allclient extends Component {
   render() {
     return (
-      <div className="allclinet_cover_page">
+      <div id="clients" className="allclinet_cover_page">
         <div className="allclient_one">
           <img src={allclient_one} alt="img"></img>
           <div className="allclient_two">
