@@ -2,7 +2,13 @@ import React, { Component } from "react";
 import "./footer.css";
 import footer from "./img/footer_img.png";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
+const handleClick = (view) => {
+  this.setState({
+    mainView: view,
+  });
+};
 const Footer = (props) => {
   return (
     <div className="Footer_cover">
@@ -11,58 +17,43 @@ const Footer = (props) => {
         <div className="footer_seconde_line_text">© SelectStar</div>
       </div>
       <div className="footer_main">
-        <HashLink smooth to="#Screen">
+        <HashLink smooth to="/#Screen">
           <img src={footer} alt="img" />
         </HashLink>
         <div className="footer_main_list">
           <div className="footer_block">
             <div className="footer_li">
-              <HashLink smooth to="#Products">
+              <HashLink smooth to="/#Products">
                 <p className="li-title">PRODUCTS</p>
               </HashLink>
-              <HashLink smooth to="#Products">
+              <HashLink smooth to="/#Products">
                 <p className="li-sub">Image Data</p>
               </HashLink>
               <HashLink smooth to="#VideoData">
-                <p
-                  className="li-sub"
-                  onClick={this.handleClick.bind(this, "VideoData")}
-                >
-                  Video Data
-                </p>
+                <p className="li-sub">Video Data</p>
               </HashLink>
               <HashLink smooth to="#AudioData">
-                <p
-                  className="li-sub"
-                  onClick={this.handleClick.bind(this, "AudioData")}
-                >
-                  Audio Data
-                </p>
+                <p className="li-sub">Audio Data</p>
               </HashLink>
               <HashLink smooth to="#TextData">
-                <p
-                  className="li-sub"
-                  onClick={this.handleClick.bind(this, "TextData")}
-                >
-                  Text Data
-                </p>
+                <p className="li-sub">Text Data</p>
               </HashLink>
             </div>
             <div className="footer_li">
-              <HashLink smooth to="#HowItWorks">
+              <HashLink smooth to="/#HowItWorks">
                 <p className="li-title">HOW IT WORKS</p>
               </HashLink>
             </div>
           </div>
           <div className="footer_block">
             <div className="footer_li">
-              <HashLink smooth to="#company">
+              <HashLink smooth to="/#company">
                 <p className="li-title">COMPANY</p>
               </HashLink>
-              <HashLink smooth to="#clients">
+              <HashLink smooth to="/#clients">
                 <p className="li-sub">Clients</p>
               </HashLink>
-              <HashLink smooth to="#Cashmission">
+              <HashLink smooth to="/#Cashmission">
                 <p className="li-sub">Cashmission</p>
               </HashLink>
               <a
@@ -78,7 +69,9 @@ const Footer = (props) => {
           </div>
           <div className="footer_block">
             <div className="footer_li">
-              <p className="li-title">CONTACT</p>
+              <HashLink smooth to="/Contact">
+                <p className="li-title">CONTACT</p>
+              </HashLink>
             </div>
             <div className="footer_li">
               <p className="li-title">FIND US</p>

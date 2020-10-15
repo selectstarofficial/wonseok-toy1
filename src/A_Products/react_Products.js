@@ -22,6 +22,13 @@ class Product extends Component {
       mainView: "ImageData",
     };
   }
+
+  componentWillReceiveProps(newProps) {
+    if (newProps.focused !== this.props.focused) {
+      this.setState({ mainView: newProps.focused });
+    }
+  }
+
   handleClick = (view) => {
     this.setState({
       mainView: view,

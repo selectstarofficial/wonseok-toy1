@@ -9,6 +9,12 @@
     #0948e6 97.52%
   );
 }
+#element {
+  scrollbar-width: none !important;
+}
+::webkit ::-webkit-scrollbar {
+  display: none;
+}
 .Solution_main_page {
   padding-left: 15rem;
   padding-right: 15rem;

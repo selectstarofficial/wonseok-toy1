@@ -6,6 +6,12 @@ import solution_quality from "./video/solution_video3_en.0625a40d.mp4";
 import solution_mobile from "./video/solution_video4_en.c721bad0.mp4";
 
 const Solution = () => {
+  /*  margin();
+  window.addEventListener("resize", margin);
+  function margin() {
+    innerWidth - 1440 / 2 == margin;
+  }
+ */
   return (
     <div id="Solution" className="Solution_cover">
       <div className="Solution_main_page">
@@ -24,7 +30,7 @@ const Solution = () => {
           <div className="Soultion_video">
             <video controls autoPlay loop muted src={solution_user} />
           </div>
-          <p className="Title">Usr-Centered Task Guidelines</p>
+          <p className="Title">User-Centered Task Guidelines</p>
           <p className="Sub">
             Our special guidance team maintains the data quality with the best
             user-centric <br />
