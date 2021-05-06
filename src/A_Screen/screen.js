@@ -14,7 +14,7 @@ const Screen = () => {
         </p>
         <p className="sub">{t("welcome")}</p>
         <HashLink smooth to="/Contact">
-          <div className="Screen_button">GET STARTED</div>
+          <div className="Screen_button">{t("button")}</div>
         </HashLink>
       </div>
     </div>

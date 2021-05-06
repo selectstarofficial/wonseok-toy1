@@ -22,18 +22,12 @@ class Product extends Component {
       mainView: "ImageData",
     };
   }
-
   componentWillReceiveProps(newProps) {
+    console.log(newProps);
     if (newProps.focused !== this.props.focused) {
       this.setState({ mainView: newProps.focused });
     }
   }
-
-  handleClick = (view) => {
-    this.setState({
-      mainView: view,
-    });
-  };
   render() {
     const MainChange = () => {
       switch (this.state.mainView) {
@@ -64,7 +58,9 @@ class Product extends Component {
           </p>
           <div className="products_Dataes">
             <div
-              onClick={this.handleClick.bind(this, "ImageData")}
+              onClick={() => {
+                this.props.handleClick("ImageData");
+              }}
               className="p_ImageData"
             >
               <img
@@ -83,7 +79,9 @@ class Product extends Component {
               </p>
             </div>
             <div
-              onClick={this.handleClick.bind(this, "VideoData")}
+              onClick={() => {
+                this.props.handleClick("VideoData");
+              }}
               className="p_VideoData"
             >
               <img
@@ -102,7 +100,9 @@ class Product extends Component {
               </p>
             </div>
             <div
-              onClick={this.handleClick.bind(this, "AudioData")}
+              onClick={() => {
+                this.props.handleClick("AudioData");
+              }}
               className="p_AudioData"
             >
               <img
@@ -122,7 +122,9 @@ class Product extends Component {
             </div>
             <div
               className="p_TextData"
-              onClick={this.handleClick.bind(this, "TextData")}
+              onClick={() => {
+                this.props.handleClick("TextData");
+              }}
             >
               <img
                 src={product_text}
@@ -141,7 +143,9 @@ class Product extends Component {
             </div>
             <div
               className="p_GetStart"
-              onClick={this.handleClick.bind(this, "GetStart")}
+              onClick={() => {
+                this.props.handleClick("GetStart");
+              }}
             >
               <img
                 src={product_last}
@@ -218,7 +222,7 @@ class Product extends Component {
                 <br />
                 algorithm filters similar
                 <br />
-                images.{" "}
+                images.
                 <span className="blue">
                   This prevents
                   <br />

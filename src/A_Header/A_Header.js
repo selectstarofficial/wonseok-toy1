@@ -4,7 +4,9 @@ import Header_img from "./img/selectstartheaderimg.png";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import languageimg from "./img/language-logo-white.450641e3.svg";
+import languageimgblack from "./img/language-logo.d60646a5.svg";
 import { useTranslation } from "react-i18next";
+import whiteimg from "./img/logo-wm.af44a964.png";
 import { Modal } from "react-bootstrap";
 
 const Dropdown = () => {
@@ -28,11 +30,26 @@ const Dropdown = () => {
 };
 const Header = () => {
   const [showDiv, setShowDiv] = useState(false);
+  const [headerchange, setHeaderchange] = useState(false);
+  const [nowscrolly, setNowscrolly] = useState(0);
+
+  useEffect(() => {
+    const real = () => {
+      /*  setNowscrolly() = window.scrollY; */
+      console.log(window.scrollY);
+      if (window.scrollY > 945) {
+        setHeaderchange(true);
+      } else {
+        setHeaderchange(false);
+      }
+    };
+    window.addEventListener("scroll", real);
+  });
 
   const showme = () => {
     setShowDiv(!showDiv);
   };
-  console.log(setShowDiv);
+
   const Asd = () => {
     switch (showDiv) {
       case true:
@@ -42,30 +59,48 @@ const Header = () => {
     }
   };
   return (
-    <div className="Header_cover">
+    <div className={`Header_cover ${headerchange && "colorwhite"}`}>
       <div className="Header_main_page">
         <HashLink smooth to="#Screen">
-          <img className="gohome" src={Header_img} alt="img" />
+          <img
+            className="gohome"
+            src={headerchange ? whiteimg : Header_img}
+            alt="img"
+          />
         </HashLink>
         <div className="Header_text_list">
           <HashLink smooth to="#Products">
-            <div className="Header_text">PRODUCT</div>
+            <div className={`Header_text ${headerchange && "colorblack"}`}>
+              PRODUCT
+            </div>
           </HashLink>
           <HashLink smooth to="#HowItWorks">
-            <div className="Header_text">HOW IT WORKS</div>
+            <div className={`Header_text ${headerchange && "colorblack"}`}>
+              HOW IT WORKS
+            </div>
           </HashLink>
           <HashLink smooth to="#company">
-            <div className="Header_text">COMPANY</div>
+            <div className={`Header_text ${headerchange && "colorblack"}`}>
+              COMPANY
+            </div>
           </HashLink>
           <Link to="/Contact">
-            <div className="Header_text">CONTACT</div>
+            <div className={`Header_text ${headerchange && "colorblack"}`}>
+              CONTACT
+            </div>
           </Link>
         </div>
         <div className="languagechange" onClick={showme}>
+          a
           <div className="languageimg">
-            <img src={languageimg} alt="language" />
+            <img
+              src={headerchange ? languageimgblack : languageimg}
+              alt="language"
+            />
           </div>
-          <span className="English">English</span>
+          <span className={`English ${headerchange && "colorblack"}`}>
+            English
+          </span>
           <Asd />
         </div>
       </div>

@@ -5,6 +5,12 @@
   height: 80px;
   z-index: 10000;
 }
+.gohome {
+  position: relative;
+  left: 40px;
+  cursor: pointer;
+  height: 24px;
+}
 .Header_main_page {
   position: absolute;
   top: 50%;
@@ -95,4 +101,10 @@
   left: 50% !important;
   line-height: 24px !important;
   transform: translate(-50%, -50%) !important;
+}
+.colorwhite {
+  background: #fff;
+}
+.colorblack {
+  color: black;
 }

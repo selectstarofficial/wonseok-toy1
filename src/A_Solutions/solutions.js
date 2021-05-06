@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./solution.css";
 import solution_aiimg from "./video/solution_video1_en.9bc23f52.mp4";
 import solution_user from "./video/solution_video2_en.7f9fb95b.mp4";
@@ -6,12 +6,11 @@ import solution_quality from "./video/solution_video3_en.0625a40d.mp4";
 import solution_mobile from "./video/solution_video4_en.c721bad0.mp4";
 
 const Solution = () => {
-  /*  margin();
-  window.addEventListener("resize", margin);
-  function margin() {
-    innerWidth - 1440 / 2 == margin;
-  }
- */
+  /*  useEffect(() => {
+    window.onresize = function (event) {
+      style.margin = window.screen - 1200;
+    };
+  }); */
   return (
     <div id="Solution" className="Solution_cover">
       <div className="Solution_main_page">
